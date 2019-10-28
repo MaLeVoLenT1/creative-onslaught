@@ -165,7 +165,7 @@ return [
         /*
          * Package Service Providers...
          */
-
+        'JavaScript' => Laracasts\Utilities\JavaScript\JavaScriptServiceProvider::class,
         /*
          * Application Service Providers...
          */
