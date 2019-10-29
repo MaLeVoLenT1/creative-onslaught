@@ -10,4 +10,11 @@ Homestead.json
 Homestead.yaml
 npm-debug.log
 /.idea
-
+public/css/
+public/fonts/
+public/images/
+public/js/
+public/mix-manifest.json
+public/vendor/
+package-lock.json
+/storage/logs/laravel.log

@@ -19,7 +19,7 @@ class CreateHeaderInformationTable extends Migration
             $table -> string('author', 15)-> unqiue();
             $table -> string('description')->nullable();
             $table -> boolean('is_active')->default(true);
-            $table -> string('icon');
+            $table -> string('icon')->default('/images/logos/favicon.png');
             $table -> string('pages');
         });
     }

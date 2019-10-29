@@ -16,7 +16,7 @@ class CreateHeaderKeywordsTable extends Migration
         Schema::create('header_keywords', function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->timestamps();
-            $table -> string('name',15) -> unqiue();
+            $table -> string('name') -> unqiue();
             $table -> boolean('is_active');
             $table -> string('pages');
         });
