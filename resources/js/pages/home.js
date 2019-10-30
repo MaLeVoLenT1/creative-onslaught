@@ -18,5 +18,14 @@ const app = new Vue({
         $document = $(document);
         $body = $("body");
 
+    },
+    methods: {
+        updateUser(user){
+            window.vDashboard.user = user;
+            if(user.data !== null){
+                window.vDashboard.userConfig.isSignedIn = true;
+                console.log("Signed-In");
+            }
+        },
     }
 });
