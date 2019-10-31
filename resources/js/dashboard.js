@@ -14,9 +14,19 @@ window.vDashboard = new Vue({
                 sideNav:{top:0, left:0},
                 pageNav:{},
                 interfaces:{
-                    home:{}
+                    home:{},
+                    news:{
+                        home:{style:"normal", background:"transparent", hasMenu: true, topBar: true, bottomBar: true},
+                        create:{style:"full", background:"matt", hasMenu: true, topBar: false, bottomBar: false},
+                        target:{style:"full", background:"matt", hasMenu: true, topBar: false, bottomBar: false}
+                    },
+                    about:{
+                        home:{style:"full", background:"matt", hasMenu: true, topBar: false, bottomBar: false},
+                    },
                 },
-                links:[]
+                links:[
+                    {name:"home", abbreviation:"Home", sorting:"second", text:"Home", href:'home', active:false,}
+                ]
             },
             userConfig:{isSignedIn: false, rank: ''},
         }
