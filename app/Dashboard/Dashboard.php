@@ -30,7 +30,6 @@ class Dashboard
                     'url' => $this -> request -> url(),
                     'header' => $this -> header -> header,
                     'request' => [
-                        "discord_code" => ($this -> request["code"])? $this -> request["code"]: null,
                         "message" => ($this -> request["message"])? $this -> request["message"]: null,
                         "item" =>  null
                     ],
