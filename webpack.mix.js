@@ -12,7 +12,6 @@ const mix = require('laravel-mix');
  */
 mix.browserSync('localhost/creative-onslaught');
 mix.setResourceRoot('../');
-mix.sass('resources/sass/app.scss', 'public/css');
 
 mix.js('resources/js/pages/home.js', 'public/js/pages/')
     .js('resources/js/pages/admin.js', 'public/js/pages/')
@@ -33,3 +32,11 @@ mix.scripts([
     'resources/js/lib/jquery.ui.touch-punch.mi.js',
     'resources/js/lib/jquery.fixedheadertable.js',
 ], 'public/js/vendor.js');
+
+
+mix.sass('resources/sass/welcome.scss', 'public/css');
+//CSS for the Admin theme Blankon
+mix.sass('resources/sass/admin.scss', 'public/css') .options({
+    processCssUrls: false
+});
+mix.sass('resources/sass/app.scss', 'public/css');

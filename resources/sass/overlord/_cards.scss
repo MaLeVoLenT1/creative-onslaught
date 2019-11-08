@@ -1,0 +1,783 @@
+.card-wrap {
+  padding-top: 100px;
+  margin-left: auto;
+  margin-right: auto;
+  height: auto;
+  max-width: 1400px;
+}
+
+.card-holder {
+  background-color: #121212;
+  opacity: 1;
+  height: 530px;
+  width: 430px;
+  float: left;
+  margin: 10px;
+  padding: 20px !important;
+  color: white;
+  position: relative;
+  .card{
+    background-image: url("../images/cards/card-bg.png");
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    .live {
+      position: absolute;
+      top: 10px;
+      left: 10px;
+      color: red;
+      span {
+        background-color: red;
+        display: inline-block;
+        height: 10px;
+        width: 10px;
+        border-radius: 10px;
+      }
+    }
+    .offline {
+      position: absolute;
+      top: 10px;
+      left: 10px;
+      color: gray;
+      span {
+        background-color: gray;
+        display: inline-block;
+        height: 10px;
+        width: 10px;
+        border-radius: 10px;
+      }
+    }
+  }
+}
+.green {color: #00ff00; }
+.red {color: red; }
+.blue {color: blue; }
+.gray {color: rgba(255, 255, 255, 0.5); }
+.gold {color: #ffb400; }
+.silver {color: #73909d; }
+.bronze {color: #a16545; }
+
+.adminMouseOver {
+  position: absolute;
+  z-index: 99;
+  height: 490px;
+  width: 390px;
+  :hover .adminHover {
+    opacity: 1;
+  }
+}
+
+.adminHover {
+  position: absolute;
+  opacity: 0;
+  height: 490px;
+  width: 390px;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.95);
+  transition: opacity 0.4s ease;
+  font-family: "Century Gothic";
+  background-image: url(../images/cards/OL-Logo.png);
+  background-size: 80%;
+  background-position: center center;
+  background-repeat: no-repeat;
+  table {
+    width: 96%;
+    margin: 0 auto;
+    td {
+      padding: 10px;
+      :first-child {
+        color: #00fff1;
+        text-align: center;
+      }
+      :last-child {
+        color: rgba(255, 255, 255, 0.5);
+      }
+    }
+  }
+}
+
+.buildMouseOver {
+  position: absolute;
+  z-index: 99;
+  height: 490px;
+  width: 390px;
+  :hover .buildHover {
+    opacity: 1;
+  }
+}
+.buildHover {
+  position: absolute;
+  opacity: 0;
+  height: 490px;
+  width: 390px;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.95);
+  transition: opacity 0.4s ease;
+  font-family: "Century Gothic";
+  .view {
+    margin-top: 15px;
+    a {
+      text-align: center;
+      padding: 5px 0;
+      border: 1px solid white;
+      display: block;
+      text-decoration: none;
+      color: white;
+      font-weight: bold;
+      transition: all 0.5s ease;
+      :hover {
+        background-color: white;
+        color: black;
+      }
+    }
+  }
+}
+
+
+.buildHover .gear {
+  margin-top: 15px;
+  text-align: center;
+  font-size: 16px; }
+.buildHover .gear .armor img {
+  position: relative;
+  left: -20px; }
+.buildHover .gear .rune {
+  position: absolute;
+  right: 15px;
+  bottom: 50px; }
+.buildHover .gear p {
+  margin: 0; }
+.buildHover .gear .first {
+  margin-top: 10px; }
+.buildHover .spec {
+  margin-top: 25px;
+  text-align: center;
+  font-size: 16px; }
+.buildHover .spec img {
+  width: 80px; }
+.buildHover .spec p {
+  padding-top: 5px; }
+.buildHover .elite {
+  color: #ff33c8; }
+.buildHover .buildSum {
+  margin-top: 15px;
+  text-align: right;
+  font-size: 20px;
+  padding: 0 15px; }
+.buildHover .buildSum h5 {
+  color: #00fff1;
+  font-weight: bold;
+  font-size: 28px; }
+.buildHover .buildSum h5, .buildHover .buildSum h4 {
+  margin: 3px 0;
+  font-size: 20px; }
+.buildHover .buildSum p {
+  margin: 3px 0;
+  font-size: 16px; }
+.buildHover .buildSum p span {
+  color: #00fff1; }
+
+.userMouseOver {
+  position: absolute;
+  z-index: 99;
+  height: 490px;
+  width: 390px; }
+.userMouseOver:hover .userHover {
+  opacity: 1; }
+
+.userHover {
+  position: absolute;
+  opacity: 0;
+  height: 490px;
+  width: 390px;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.95);
+  transition: opacity 0.4s ease;
+  font-family: "Century Gothic"; }
+.userHover .wrap {
+  padding: 0; }
+.userHover h4 {
+  text-align: center;
+  font-weight: bold;
+  padding: 15px 0 10px 0; }
+.userHover .left {
+  padding-bottom: 25px; }
+.userHover .left img {
+  margin-left: calc(50% - 20px);
+  width: 40px; }
+.userHover .top img {
+  margin-left: calc(50% - 40px);
+  width: 80px; }
+.userHover .right {
+  padding-bottom: 25px; }
+.userHover .right a {
+  text-decoration: none;
+  color: #00fff1; }
+.userHover .right h4 {
+  text-align: left;
+  font-weight: bold;
+  margin: 0;
+  padding: 0; }
+.userHover .right p {
+  text-align: left;
+  margin: 0; }
+.userHover p {
+  text-align: center;
+  font-size: 16px; }
+.userHover p span {
+  color: #00fff1; }
+.userHover .present, .userHover .late, .userHover .absent {
+  float: left;
+  width: 30%;
+  text-align: center; }
+.userHover .present p, .userHover .late p, .userHover .absent p {
+  padding-top: 5px;
+  margin-bottom: 5px; }
+.userHover .present h4, .userHover .late h4, .userHover .absent h4 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-top: 0;
+  padding-top: 0; }
+.userHover .present {
+  margin-left: calc(5% - 4px);
+  border-top: solid 6px #11a7aa; }
+.userHover .late {
+  border-top: solid 6px #fbb052;
+  margin: 0 2px 0 2px; }
+.userHover .absent {
+  border-top: solid 6px #e54c64; }
+
+.finalMouseOver {
+  position: absolute;
+  z-index: 99;
+  height: 490px;
+  width: 390px; }
+.finalMouseOver:hover .finalHover {
+  opacity: 1; }
+
+.finalHover {
+  position: absolute;
+  opacity: 0;
+  height: 490px;
+  width: 390px;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.95);
+  transition: opacity 0.4s ease;
+  font-family: "Century Gothic"; }
+.finalHover h3 {
+  font-size: 22px;
+  font-weight: bold;
+  margin: 5px 0; }
+.finalHover h3 span {
+  color: #ffb400;
+  font-size: 18px; }
+.finalHover table {
+  width: 100%;
+  font-size: 16px; }
+.finalHover table tr:nth-child(odd) {
+  background-color: rgba(255, 255, 255, 0.05); }
+.finalHover table tr:nth-child(even) {
+  background-color: rgba(255, 255, 255, 0.1); }
+.finalHover table tr td {
+  padding: 3px 10px; }
+.finalHover table tr td:last-child {
+  text-align: right;
+  font-weight: bold; }
+
+.guildMouseOver {
+  position: absolute;
+  z-index: 99;
+  height: 490px;
+  width: 390px; }
+.guildMouseOver:hover .guildHover {
+  opacity: 1; }
+
+.guildHover {
+  position: absolute;
+  opacity: 0;
+  height: 490px;
+  width: 390px;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.95);
+  transition: opacity 0.4s ease;
+  font-family: "Century Gothic";
+  p{
+    line-height: normal;
+  }
+}
+.guildHover .col-xs-12 {
+  padding: 0;
+  margin: 0; }
+.guildHover .left, .guildHover .right {
+  padding: 10px 0 10px 0;
+}
+.guildHover .left ul, .guildHover .right ul {
+  list-style-type: none;
+  padding: 0;
+}
+.guildHover .left ul li, .guildHover .right ul li {
+  font-size: 16px;
+  line-height: normal !important;
+}
+.guildHover .desc {
+  padding-top: 10px;
+  color: rgba(255, 255, 255, 0.5);
+}
+.guildHover .right {
+  color: #00fff1;
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 20px;
+  vertical-align: top;
+}
+.guildHover .right a {
+  font-size: 14px;
+  text-decoration: none;
+  color: #00fff1;
+}
+.guildHover .right a:hover {
+  color: #00fff1;
+}
+.guildHover .right b {
+  font-size: 18px;
+}
+.guildHover .right b span {
+  color: rgba(255, 255, 255, 0.5);
+}
+.guildHover .left {
+  line-height: 20px;
+}
+
+.matchupMouseOver {
+  position: absolute;
+  z-index: 99;
+  height: 490px;
+  width: 390px;
+}
+.matchupMouseOver:hover .matchupHover {
+  opacity: 1;
+}
+
+.matchupHover {
+  position: absolute;
+  opacity: 0;
+  height: 490px;
+  width: 390px;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.95);
+  transition: opacity 0.4s ease;
+  font-family: "Century Gothic";
+}
+.matchupHover .stats-item {
+  padding-bottom: 15px; }
+.matchupHover .stats-item div {
+  padding: 5px 0 5px 0;
+  text-align: center;
+  font-size: 16px;
+  font-weight: bold; }
+.matchupHover .stats-item div span {
+  font-weight: normal;
+  color: #00fff1; }
+.matchupHover .left {
+  padding: 15px 0 20px 10px !important;
+}
+.matchupHover .left h3 {
+  font-size: 20px;
+  margin: 0;
+  padding: 0;
+  font-weight: bold;
+  line-height: 20px;
+  color: inherit;
+  letter-spacing: normal;
+}
+.matchupHover .right {
+  padding: 15px 10px 20px 0;
+  text-align: right;
+  font-size: 18px;
+}
+.matchupHover .right .gold, .matchupHover .right .silver, .matchupHover .right .bronze {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  margin: 0 5px 0 5px;
+  line-height: 20px;
+  font-weight: bold;
+  color: white;
+}
+.matchupHover .right .gold {
+  background-color: #ffb400; }
+.matchupHover .right .silver {
+  background-color: #73909d; }
+.matchupHover .right .bronze {
+  background-color: #a16545; }
+
+.raidAMouseOver {
+  position: absolute;
+  z-index: 99;
+  height: 490px;
+  width: 390px; }
+.raidAMouseOver:hover .raidAHover {
+  opacity: 1; }
+
+.raidAHover {
+  position: absolute;
+  opacity: 0;
+  height: 490px;
+  width: 390px;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.95);
+  transition: opacity 0.4s ease;
+  font-family: "Century Gothic"; }
+.raidAHover h3 {
+  margin: 0;
+  padding: 0 0 20px 0;
+  font-size: 18px;
+  font-family: "Century Gothic";
+  text-align: center; }
+.raidAHover table {
+  width: 100%;
+  margin: 0;
+  padding: 0; }
+.raidAHover table td {
+  padding: 5px 0 5px 0;
+  color: rgba(255, 255, 255, 0.5); }
+.raidAHover table a {
+  text-decoration: none;
+  color: white; }
+.raidAHover table a:hover {
+  color: #00fff1; }
+
+.raidMouseOver {
+  position: absolute;
+  z-index: 99;
+  height: 490px;
+  width: 390px; }
+.raidMouseOver:hover .raidHover {
+  opacity: 1; }
+
+.raidHover {
+  position: absolute;
+  opacity: 0;
+  height: 490px;
+  width: 390px;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.95);
+  transition: opacity 0.4s ease;
+  font-family: "Century Gothic"; }
+.raidHover table {
+  height: 100%;
+  width: 100%;
+  padding: 0; }
+.raidHover table tr {
+  width: 100%;
+  padding: 5px 0 5px 10px; }
+.raidHover table tr:nth-child(odd) {
+  background-color: rgba(255, 255, 255, 0.1); }
+.raidHover table tr:nth-child(even) {
+  background-color: rgba(255, 255, 255, 0.05); }
+.raidHover table span {
+  color: #00ff00; }
+.raidHover table .raidPast {
+  color: rgba(255, 255, 255, 0.3); }
+.raidHover table .raidNext {
+  color: #00fff1; }
+.raidHover table .raidFuture {
+  color: white; }
+.raidHover table .raidFuture, .raidHover table .raidNext, .raidHover table .raidPast {
+  padding-left: 15px; }
+.raidHover table .attended {
+  text-align: right;
+  padding-right: 15px; }
+.raidHover table .raidFuture + td, .raidHover table .raidNext + td {
+  color: rgba(255, 255, 255, 0.5); }
+
+.user {
+  width: 100%;
+  height: 256px; }
+.user img {
+  height: 150px;
+  width: 150px;
+  border-radius: 150px;
+  margin-left: calc(50% - 75px);
+  margin-top: 50px;
+  border: solid 4px #00fff1; }
+
+.admin {
+  background-image: url("../images/cards/admin.png");
+  background-repeat: no-repeat;
+  background-position: top, center;
+  width: 100%;
+  height: 256px; }
+
+.build {
+  background-image: url("../images/cards/build.png");
+  background-repeat: no-repeat;
+  background-position: top, center;
+  width: 100%;
+  height: 256px; }
+
+.wvw {
+  background-image: url("../images/cards/wvw.png");
+  background-repeat: no-repeat;
+  background-position: top, center;
+  width: 100%;
+  height: 256px; }
+
+.guild {
+  background-image: url("../images/cards/guild.png");
+  background-repeat: no-repeat;
+  background-position: top, center;
+  width: 100%;
+  height: 256px; }
+
+.raid {
+  background-image: url("../images/cards/raid.png");
+  background-repeat: no-repeat;
+  background-position: top, center;
+  width: 100%;
+  height: 256px; }
+
+.raid-card-content, .raidA-card-content, .guild-card-content, .matchup-card-content, .final-card-content, .user-card-content, .build-card-content, .admin-card-content {
+  // Changed
+  padding: 0;
+  margin-top: -60px;
+  line-height: normal;
+  font-family: "Century Gothic";
+}
+
+.raid-card-content .rosterIcon, .raidA-card-content .rosterIcon, .guild-card-content .rosterIcon, .matchup-card-content .rosterIcon, .final-card-content .rosterIcon, .user-card-content .rosterIcon, .build-card-content .rosterIcon, .admin-card-content .rosterIcon {
+  text-align: center;
+  font-size: 20px;
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 20%;
+  padding: 10px 0 10px 0;
+  margin: 0 2.5% 15px 2.5%; }
+.raid-card-content h4, .raidA-card-content h4, .guild-card-content h4, .matchup-card-content h4, .final-card-content h4, .user-card-content h4, .build-card-content h4, .admin-card-content h4 {
+  text-align: center;
+  margin: 0;
+  padding-bottom: 15px;
+  font-size: 20px; }
+.raid-card-content h4 span, .raidA-card-content h4 span, .guild-card-content h4 span, .matchup-card-content h4 span, .final-card-content h4 span, .user-card-content h4 span, .build-card-content h4 span, .admin-card-content h4 span {
+  font-size: 15px; }
+.raid-card-content h3, .raidA-card-content h3, .guild-card-content h3, .matchup-card-content h3, .final-card-content h3, .user-card-content h3, .build-card-content h3, .admin-card-content h3 {
+  font-size: 22px;
+  color: white;
+  letter-spacing: 2px;
+  padding: 0 0 20px 0;
+  margin: 0; }
+.raid-card-content p, .raidA-card-content p, .guild-card-content p, .matchup-card-content p, .final-card-content p, .user-card-content p, .build-card-content p, .admin-card-content p {
+  margin: 0;
+  padding: 7px 0 7px 0;
+  text-align: center; }
+.raid-card-content p:nth-child(odd), .raidA-card-content p:nth-child(odd), .guild-card-content p:nth-child(odd), .matchup-card-content p:nth-child(odd), .final-card-content p:nth-child(odd), .user-card-content p:nth-child(odd), .build-card-content p:nth-child(odd), .admin-card-content p:nth-child(odd) {
+  background-color: rgba(0, 0, 0, 0.2); }
+.raid-card-content p:nth-child(even), .raidA-card-content p:nth-child(even), .guild-card-content p:nth-child(even), .matchup-card-content p:nth-child(even), .final-card-content p:nth-child(even), .user-card-content p:nth-child(even), .build-card-content p:nth-child(even), .admin-card-content p:nth-child(even) {
+  background-color: rgba(0, 0, 0, 0.6); }
+.raid-card-content p span, .raidA-card-content p span, .guild-card-content p span, .matchup-card-content p span, .final-card-content p span, .user-card-content p span, .build-card-content p span, .admin-card-content p span {
+  color: #00ff00; }
+.raid-card-content .raidPast, .raidA-card-content .raidPast, .guild-card-content .raidPast, .matchup-card-content .raidPast, .final-card-content .raidPast, .user-card-content .raidPast, .build-card-content .raidPast, .admin-card-content .raidPast {
+  color: rgba(255, 255, 255, 0.3);
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto; }
+.raid-card-content .raidNext, .raidA-card-content .raidNext, .guild-card-content .raidNext, .matchup-card-content .raidNext, .final-card-content .raidNext, .user-card-content .raidNext, .build-card-content .raidNext, .admin-card-content .raidNext {
+  color: #00fff1;
+  font-size: 18px;
+  font-weight: bold; }
+.raid-card-content .raidFuture, .raidA-card-content .raidFuture, .guild-card-content .raidFuture, .matchup-card-content .raidFuture, .final-card-content .raidFuture, .user-card-content .raidFuture, .build-card-content .raidFuture, .admin-card-content .raidFuture {
+  color: white;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto; }
+.raid-card-content row, .raid-card-content col-xs-4, .raid-card-content col-xs-8, .raidA-card-content row, .raidA-card-content col-xs-4, .raidA-card-content col-xs-8, .guild-card-content row, .guild-card-content col-xs-4, .guild-card-content col-xs-8, .matchup-card-content row, .matchup-card-content col-xs-4, .matchup-card-content col-xs-8, .final-card-content row, .final-card-content col-xs-4, .final-card-content col-xs-8, .user-card-content row, .user-card-content col-xs-4, .user-card-content col-xs-8, .build-card-content row, .build-card-content col-xs-4, .build-card-content col-xs-8, .admin-card-content row, .admin-card-content col-xs-4, .admin-card-content col-xs-8 {
+  padding: 0;
+  margin: 0; }
+.raid-card-content .guildBanner, .raidA-card-content .guildBanner, .guild-card-content .guildBanner, .matchup-card-content .guildBanner, .final-card-content .guildBanner, .user-card-content .guildBanner, .build-card-content .guildBanner, .admin-card-content .guildBanner {
+  background-image: url("../images/cards/guildBanner.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: top right;
+  height: 180px;
+  padding: 0;
+  position: relative; }
+.raid-card-content .guildBanner img, .raidA-card-content .guildBanner img, .guild-card-content .guildBanner img, .matchup-card-content .guildBanner img, .final-card-content .guildBanner img, .user-card-content .guildBanner img, .build-card-content .guildBanner img, .admin-card-content .guildBanner img {
+  position: absolute;
+  right: 20px;
+  top: 20px; }
+.raid-card-content .guildSumm, .raidA-card-content .guildSumm, .guild-card-content .guildSumm, .matchup-card-content .guildSumm, .final-card-content .guildSumm, .user-card-content .guildSumm, .build-card-content .guildSumm, .admin-card-content .guildSumm {
+  padding-right: 35px; }
+.raid-card-content .guildSumm h5, .raidA-card-content .guildSumm h5, .guild-card-content .guildSumm h5, .matchup-card-content .guildSumm h5, .final-card-content .guildSumm h5, .user-card-content .guildSumm h5, .build-card-content .guildSumm h5, .admin-card-content .guildSumm h5 {
+  font-weight: bold;
+  color: #00fff1;
+  font-size: 15px;
+  margin: 0;
+  padding-bottom: 5px; }
+.raid-card-content .guildSumm ul, .raidA-card-content .guildSumm ul, .guild-card-content .guildSumm ul, .matchup-card-content .guildSumm ul, .final-card-content .guildSumm ul, .user-card-content .guildSumm ul, .build-card-content .guildSumm ul, .admin-card-content .guildSumm ul {
+  list-style-type: none;
+  padding: 0; }
+.raid-card-content .guildSumm ul li, .raidA-card-content .guildSumm ul li, .guild-card-content .guildSumm ul li, .matchup-card-content .guildSumm ul li, .final-card-content .guildSumm ul li, .user-card-content .guildSumm ul li, .build-card-content .guildSumm ul li, .admin-card-content .guildSumm ul li {
+  padding-bottom: 3px; }
+.raid-card-content .guildSumm ul li:last-child, .raidA-card-content .guildSumm ul li:last-child, .guild-card-content .guildSumm ul li:last-child, .matchup-card-content .guildSumm ul li:last-child, .final-card-content .guildSumm ul li:last-child, .user-card-content .guildSumm ul li:last-child, .build-card-content .guildSumm ul li:last-child, .admin-card-content .guildSumm ul li:last-child {
+  padding-top: 5px;
+  color: rgba(255, 255, 255, 0.5); }
+
+.admin-card-content table {
+  width: 96%;
+  margin: 0 auto; }
+.admin-card-content table td {
+  padding: 5px 10px; }
+.admin-card-content table td:last-child {
+  color: rgba(255, 255, 255, 0.5); }
+
+.build-card-content .right {
+  margin-top: 10px;
+  padding: 0 15px; }
+.build-card-content .right ul {
+  padding: 0;
+  list-style-type: none; }
+.build-card-content .right ul li {
+  font-size: 15px;
+  padding: 3px 0; }
+.build-card-content .right ul li:first-child {
+  font-size: 18px;
+  font-weight: bold;
+  padding-top: 0; }
+.build-card-content .right ul li span {
+  color: #00fff1; }
+.build-card-content .left {
+  margin-top: 15px;
+  padding: 0 15px;
+  height: 150px; }
+.build-card-content .left .build {
+  background-color: rgba(0, 0, 0, 0.5);
+  background-image: url(../images/cards/buildType-BL.png);
+  background-size: 80%;
+  background-position: center center;
+  background-repeat: no-repeat;
+  height: 100%; }
+.build-card-content .left .build img {
+  width: 100px;
+  margin-left: calc(50% - 50px);
+  margin-top: 30px; }
+
+.user-card-content .right {
+  padding: 0 15px; }
+.user-card-content .right ul {
+  padding: 0;
+  list-style-type: none; }
+.user-card-content .right ul li {
+  font-size: 14px;
+  padding: 3px 0; }
+.user-card-content .right ul li span {
+  color: #00fff1; }
+.user-card-content .left {
+  padding: 0 15px;
+  height: 150px; }
+.user-card-content .left p {
+  margin-top: 5px; }
+.user-card-content .left .build {
+  background-color: rgba(0, 0, 0, 0.5);
+  background-image: url(../images/cards/buildType-BL.png);
+  background-size: 70%;
+  background-position: center center;
+  background-repeat: no-repeat;
+  height: 100%; }
+.user-card-content .left .build img {
+  width: 100px;
+  margin-left: calc(50% - 50px);
+  margin-top: 30px; }
+
+.final-card-content table {
+  width: 96%;
+  margin: 0 auto; }
+.final-card-content table tr:nth-child(odd) {
+  background-color: rgba(0, 0, 0, 0.2); }
+.final-card-content table tr:nth-child(even) {
+  background-color: rgba(0, 0, 0, 0.6); }
+.final-card-content table tr td {
+  text-align: center;
+  font-size: 16px;
+  padding: 10px 0 10px 0; }
+.final-card-content table tr td:first-child {
+  font-weight: bold; }
+.final-card-content table tr .green, .final-card-content table tr .red, .final-card-content table tr .blue {
+  font-size: 18px;
+  font-weight: bold;
+  width: 25%; }
+.final-card-content table tr .green span, .final-card-content table tr .red span, .final-card-content table tr .blue span {
+  color: #ffb400;
+  line-height: 18px;
+  font-size: 14px; }
+
+.matchup-card-content {
+  height: 150px;
+  table {
+    width: 96%;
+    margin: 0 auto;
+    padding: 5px;
+    height: 70px;
+    tr:first-child {
+      background-color: rgba(0, 0, 0, 0.2);
+    }
+    tr:last-child {
+      background-color: rgba(0, 0, 0, 0.6);
+    }
+    tr td {
+      text-align: center;
+    }
+    tr {
+      .up {
+        color: #3f983f;
+        font-weight: bold;
+      }
+      .down {
+        color: #983f3f;
+        font-weight: bold;
+      }
+
+    }
+  }
+  .summarySect {
+    padding: 0 15px 0 15px;
+    height: 120px;
+    .red p:first-child {color: red;}
+    .green p:first-child {color: #00ff00;}
+    .blue p:first-child {
+      color: blue;
+    }
+    .red, .green,  .blue {
+      height: 100px;
+      padding: 5px;
+      margin: 0;
+      p{
+        line-height: 1.42857143;
+      }
+      p:first-child{
+        font-size: 16px;
+      }
+      p:nth-child(odd){
+        background-color: rgba(0, 0, 0, 0.5);
+      }
+      p:nth-child(even){
+        background-color: rgba(0, 0, 0, 0.5);
+      }
+    }
+  }
+}
+
+.footerHover {
+  position: absolute;
+  bottom: 0;
+  text-align: center;
+  width: 100%;
+  p {
+    background-color: rgba(0, 0, 0, 0.5);
+    margin: 0;
+    padding: 5px;
+  }
+}
+
+
+/*# sourceMappingURL=main.css.map */

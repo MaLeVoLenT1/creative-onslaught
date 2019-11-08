@@ -1,0 +1,47 @@
+.content-tab{
+  width: 100%;
+  min-height: 300px;
+  max-height: 1000px;
+  margin: 0;
+  overflow: hidden;
+  list-style-type: none;
+
+  .menu-tabs-horizontal{
+    width: 100%;
+    height: 45px;
+    ul{
+      width: 100%;
+      margin: 15px 0 0;
+      text-align: center;
+      li{
+        display: inline;
+        padding: 0 15px;
+        a{
+          padding-bottom: 10px;
+        }
+
+      }
+    }
+  }
+
+  .menu-tabs-mobile, .menu-tabs-vertical{
+    float: left;
+    ul{
+      float: left;
+      li{
+        padding: 10px;
+        a{
+
+        }
+      }
+    }
+  }
+
+  .tabs-horizontal-body{
+    min-height: 500px;
+  }
+
+  .tabs-horizontal-body-mobile, .tabs-horizontal-body-vertical{
+
+  }
+}

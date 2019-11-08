@@ -1,0 +1,25 @@
+.responsive-table{
+  width:100%;
+  overflow: auto;
+  height:500px;
+  .table-design{
+    background: #212121;
+  }
+}
+.trHover{
+  background-color: #05988c !important;
+}
+
+.table-footer{
+  width:100%;
+  height: 100px;
+  background-color: rgba(22, 22, 22, 0.8);
+  .pagination-bar{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    padding: 30px;
+    background-color: rgb(21, 21, 21);
+    float: left;
+  }
+}

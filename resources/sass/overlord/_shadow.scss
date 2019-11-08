@@ -1,0 +1,165 @@
+/*SHADOW EFFECTS CLASSES
+    Website: https://codepen.io/sdthornton/pen/wBZdXq   */
+/*==================================================
+    * Shadow Effect - Overlord Main
+    * ===============================================*/
+
+@mixin overlord-shadow() {
+  -webkit-box-shadow: rgba(0, 0, 0, 0.7) 0 1px 8px, inset rgba(0, 0, 0, 0.4) 0 0 0 1px;
+  -moz-box-shadow: rgba(0, 0, 0, 0.7) 0 1px 8px, inset rgba(0, 0, 0, 0.4) 0 0 0 1px;
+  box-shadow: rgba(0, 0, 0, 0.7) 0 1px 8px, inset rgba(0, 0, 0, 0.4) 0 0 0 1px;
+}
+.OverLord-Shadow-Main {
+  -webkit-box-shadow: rgba(0, 0, 0, 0.7) 0 1px 8px, inset rgba(0, 0, 0, 0.4) 0 0 0 1px;
+  -moz-box-shadow: rgba(0, 0, 0, 0.7) 0 1px 8px, inset rgba(0, 0, 0, 0.4) 0 0 0 1px;
+  box-shadow: rgba(0, 0, 0, 0.7) 0 1px 8px, inset rgba(0, 0, 0, 0.4) 0 0 0 1px;
+}
+/*  Shadow Effect - Bottom
+* ===============================================*/
+.Overlord-Bottom-Shadow{
+  -webkit-box-shadow: 0 10px 6px -6px #000000;
+  -moz-box-shadow: 0 10px 6px -6px #000000;
+  box-shadow: 0 10px 6px -6px #000000;
+}
+/* Shadow Effect - Sides
+* ===============================================*/
+.Overlord-Sides-Shadow
+{
+  -webkit-box-shadow: 0 10px 15px rgb(0, 0, 0), 0 0 20px rgba(0, 0, 0, 0.19) inset;
+  -moz-box-shadow: 0 10px 15px rgba(0, 0, 0, 0.95), 0 0 20px rgba(0, 0, 0, 0.19) inset;
+  box-shadow: 0 10px 15px rgb(0, 0, 0), 0 0 20px rgba(0, 0, 0, 0.19) inset;
+}
+.Overlord-Sides-Shadow:before, .Overlord-Sides-Shadow:after
+{
+  content:"";
+  position:absolute;
+  z-index:-1;
+  -webkit-box-shadow:0 0 20px rgba(0,0,0,0.8);
+  -moz-box-shadow:0 0 20px rgba(0,0,0,0.8);
+  box-shadow:0 0 20px rgba(0,0,0,0.8);
+  top:10px;
+  bottom:10px;
+  left:0;
+  right:0;
+  -moz-border-radius:100px / 10px;
+  border-radius:100px / 10px;
+}
+.Overlord-Sides-Shadow:after
+{
+  right:10px;
+  left:auto;
+  -webkit-transform:skew(8deg) rotate(3deg);
+  -moz-transform:skew(8deg) rotate(3deg);
+  -ms-transform:skew(8deg) rotate(3deg);
+  -o-transform:skew(8deg) rotate(3deg);
+  transform:skew(8deg) rotate(3deg);
+}
+
+
+
+.Shadow-Left-Right-effect8
+{
+  position:relative;
+  -webkit-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+  -moz-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+  box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+}
+.Shadow-Left-Right-effect8:before, .Shadow-Left-Right-effect8:after
+{
+  content:"";
+  position:absolute;
+  z-index:-1;
+  -webkit-box-shadow:0 0 20px rgba(0,0,0,0.8);
+  -moz-box-shadow:0 0 20px rgba(0,0,0,0.8);
+  box-shadow:0 0 20px rgba(0,0,0,0.8);
+  top:10px;
+  bottom:10px;
+  left:0;
+  right:0;
+  -moz-border-radius:100px / 10px;
+  border-radius:100px / 10px;
+}
+.Shadow-Left-Right-effect8:after
+{
+  right:10px;
+  left:auto;
+  -webkit-transform:skew(8deg) rotate(3deg);
+  -moz-transform:skew(8deg) rotate(3deg);
+  -ms-transform:skew(8deg) rotate(3deg);
+  -o-transform:skew(8deg) rotate(3deg);
+  transform:skew(8deg) rotate(3deg);
+}
+
+
+
+.Shadow-Top-Bottom-effect7
+{
+  position:relative;
+  -webkit-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+  -moz-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+  box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+}
+.Shadow-Top-Bottom-effect7:before, .Shadow-Top-Bottom-effect7:after
+{
+  content:"";
+  position:absolute;
+  z-index:-1;
+  -webkit-box-shadow:0 0 20px rgba(0,0,0,0.8);
+  -moz-box-shadow:0 0 20px rgba(0,0,0,0.8);
+  box-shadow:0 0 20px rgba(0,0,0,0.8);
+  top:0;
+  bottom:0;
+  left:10px;
+  right:10px;
+  -moz-border-radius:100px / 10px;
+  border-radius:100px / 10px;
+}
+.Shadow-Top-Bottom-effect7:after
+{
+  right:10px;
+  left:auto;
+  -webkit-transform:skew(8deg) rotate(3deg);
+  -moz-transform:skew(8deg) rotate(3deg);
+  -ms-transform:skew(8deg) rotate(3deg);
+  -o-transform:skew(8deg) rotate(3deg);
+  transform:skew(8deg) rotate(3deg);
+}
+
+
+.Shadow-Bottom-effect6
+{
+  position:relative;
+  -webkit-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+  -moz-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+  box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+}
+.Shadow-Bottom-effect6:before, .Shadow-Bottom-effect6:after
+{
+  content:"";
+  position:absolute;
+  z-index:-1;
+  -webkit-box-shadow:0 0 20px rgba(0,0,0,0.8);
+  -moz-box-shadow:0 0 20px rgba(0,0,0,0.8);
+  box-shadow:0 0 20px rgba(0,0,0,0.8);
+  top:50%;
+  bottom:0;
+  left:10px;
+  right:10px;
+  -moz-border-radius:100px / 10px;
+  border-radius:100px / 10px;
+}
+.Shadow-Bottom-effect6:after
+{
+  right:10px;
+  left:auto;
+  -webkit-transform:skew(8deg) rotate(3deg);
+  -moz-transform:skew(8deg) rotate(3deg);
+  -ms-transform:skew(8deg) rotate(3deg);
+  -o-transform:skew(8deg) rotate(3deg);
+  transform:skew(8deg) rotate(3deg);
+}
+.Shadow-Hard-Bottom-effect1{
+  -webkit-box-shadow: 0 10px 6px -6px #000000;
+  -moz-box-shadow: 0 10px 6px -6px #000000;
+  box-shadow: 0 10px 6px -6px #000000;
+}

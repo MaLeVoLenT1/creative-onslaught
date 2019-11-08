@@ -1,0 +1,30 @@
+/** For Basic stat Blade  */
+.overlord-card {
+  background-color: #2b2b2b !important;
+  box-shadow: rgba(0, 0, 0, 0.7) 0 1px 8px, inset rgba(0, 0, 0, 0.4) 0 0 0 1px;
+  padding: 15px;
+  margin-bottom: 20px;
+}
+/** Ajax Loader  */
+#ajaxload{
+  padding: 50px;
+  left: 50%;
+  opacity: .5;
+  position: absolute;
+}
+.left-ol{
+  margin: 5px !important;
+  background-color: #202020;
+
+}
+.footer-ol{
+  background-color: transparent !important;
+}
+
+/** Charts */
+.overlord-small-chart{
+  padding: 0;
+  position: relative;
+  height: 250px;
+  width: 100%;
+}

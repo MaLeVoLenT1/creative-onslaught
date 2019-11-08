@@ -1,0 +1,1945 @@
+@import variables
+  
+=item-box($height, $width, $inset)
+  height: $height
+  width: $width
+  background-color: $item
+  box-shadow: inset 0 0 $inset black
+  border: 1px solid black
+  &:hover
+    background-color: $hover-gray
+    cursor: pointer
+
+=img-inset($dimens, $m, $opacity)
+  height: $dimens
+  width: $dimens
+  margin: $m
+  opacity: $opacity
+  
+=border-margin($size)
+  background-color: $hover-gray
+  border-left: solid $size rgba(0,0,0,0)
+  border-right: solid $size rgba(0,0,0,0)
+  -moz-background-clip: padding
+  -webkit-background-clip: padding
+  background-clip: padding-box
+  
+=utilWrap($left, $top)
+  width: 228px
+  position: absolute
+  top: $top
+  left: $left
+  padding: 10px
+  z-index: 99
+  background-color: $selector
+  p
+    font-weight: bold
+    width: 100%
+    span
+      float: right
+      line-height: 20px
+      &:hover
+        color: $scourge1
+        cursor: pointer
+  ul
+    width: 208px
+    padding-bottom: 0
+    margin: 0 0 2px 0
+    &>li
+      padding: 0
+      margin-right: 2px
+      &:first-child
+        margin-right: 2px
+      &:last-child
+        margin-left: 0
+      img
+        &:hover
+          outline: 3px solid yellow
+          outline-offset: -3px
+          cursor: pointer
+      
+        
+body
+  background-color: $bg-gray
+  color: $text
+  margin: 0
+  padding: 0
+
+h4
+  font-weight: bolder
+  
+.img-responsive
+  height: auto
+  width: auto
+  margin: auto  
+  
+.gear
+  background-color: rgba(0,0,0,0.2)
+  
+.buildSections
+  padding-top: 30px
+  
+.editor
+  height: 100%
+  
+.buildEditor
+  height: 100%
+  
+  .fa-undo
+    font-size: 26px
+    &:hover
+      color: $text-hover
+  .undo-1
+    width: 50%
+    display: inline-block
+    float: left
+    padding: 0 40px
+    margin-left: -20px
+
+.classSelector
+  height: 130px
+  padding: 0
+  .selectTitle
+    height: 30px
+    padding: 0
+    line-height: 30px
+    color: white
+    font-weight: bold
+    background-color: $secondary-gray
+  .professions2
+    h1
+      font-size: 40px
+      font-family: 'Lato'
+      display: inline-block
+      margin: 0
+      position: relative
+      top: 20px
+    ul
+      margin-left: 50px
+      display: inline-block
+      margin-top: 10px
+      float: right
+    .options3
+      li
+        height: 32px
+        font-weight: bold
+        &:first-child
+          line-height: 32px
+          margin-bottom: 10px
+        img
+          display: inline-block
+    .options2
+      li
+        &:first-child
+          padding-bottom: 10px
+        input
+          height: 32px
+          background: $bg-gray
+          border: 1px solid $accent-gray
+          padding: 2px
+        .active
+          color: $hover-blue
+        span
+          font-weight: bold
+          height: 32px
+          display: inline-block
+          text-align: center
+          width: 55px
+          padding-top: 5px
+          background: $secondary-gray
+          &:hover
+            background: $primary-gray
+            cursor: pointer
+    .options1 
+      li
+        border: 1px solid $accent-gray
+        padding: 5px 10px
+        text-align: center
+        &:last-child
+          margin-top: 10px
+        &:hover
+          cursor: pointer
+          background-color: $secondary-gray
+  .professions
+    .expansion
+      float: left
+      display: inline-block
+      margin: 5px 0 0 -20px
+      li
+        text-align: center
+        display: block
+        background-color: $secondary-gray
+        padding: 3px 3px
+        font-size: 12px
+        width: 70px
+        font-weight: bold
+        margin: 5px 0 0 0
+        &:hover
+          background-color: $primary-gray
+          cursor: pointer
+      .expacActive
+        color: $hover-blue
+    ul
+      li
+        display: inline-block
+        padding-top: 20px
+        margin-left: 20px
+        span
+          font-size: 50px
+          &:hover
+            cursor: pointer
+
+.skillsBar
+  display: inline-block
+  height: 100%
+  width: 30px
+  background: $secondary-gray
+          
+.classSelectorMobile
+  height: 252px
+  padding: 0
+  h1
+    font-size: 16px
+    margin: -5px 0 0 0
+  .expansion
+    margin-top: -10px
+    .expacActive
+      color: $hover-blue
+    li
+      font-weight: bold
+      height: 32px
+      display: inline-block
+      text-align: center
+      width: 44px
+      padding-top: 5px
+      background: $secondary-gray
+      &:hover
+        background: $primary-gray
+        cursor: pointer
+  .selectTitle
+    height: 30px
+    padding: 0
+    line-height: 30px
+    color: white
+    font-weight: bold
+    background-color: $secondary-gray
+  .profMobile2
+    h1
+      font-size: 50px
+      font-family: 'Lato'
+      display: inline-block
+      margin: 0
+      position: relative
+      top: -5px
+    ul
+      display: inline-block
+      margin-top: 10px
+    .options3
+      li
+        height: 32px
+        font-weight: bold
+        &:first-child
+          line-height: 32px
+          margin-bottom: 10px
+        img
+          display: inline-block
+    .options2
+      margin-top: 0
+      li
+        padding-bottom: 10px
+        input
+          height: 32px
+          width: 140px
+          background: $bg-gray
+          border: 1px solid $accent-gray
+          padding: 2px
+        .active
+          color: $hover-blue
+        span
+          font-weight: bold
+          height: 32px
+          display: inline-block
+          text-align: center
+          width: 44px
+          padding-top: 5px
+          background: $secondary-gray
+          &:hover
+            background: $primary-gray
+            cursor: pointer
+    .options1 
+      li
+        border: 1px solid $accent-gray
+        padding: 5px 10px
+        text-align: center
+        &:last-child
+          margin-top: 10px
+        &:hover
+          cursor: pointer
+          background-color: $secondary-gray
+  .profMobile
+    padding-right: 0
+    text-align: center
+    height: 160px
+    .cIcons
+      margin-bottom: 0
+      height: 100%
+    .expansion
+      float: left
+      display: inline-block
+      margin: 5px 0 0 -20px
+      li
+        text-align: center
+        display: block
+        background-color: $secondary-gray
+        padding: 3px 3px
+        font-size: 12px
+        width: 70px
+        font-weight: bold
+        margin: 5px 0 0 0
+        &:hover
+          background-color: $primary-gray
+          cursor: pointer
+      .expacActive
+        color: $hover-blue
+    ul
+      margin-top: 10px
+      li
+        display: inline-block
+        font-size: 30px
+        margin-right: 10px
+    
+    
+    
+    
+.gearTitle
+  position: absolute
+  left: 0
+  top: 0
+  width: 30px
+  height: 100%
+  padding-top: 30%
+  background-color: $hover-gray
+
+.wset
+  padding: 15px 0 0 0
+  max-height: 80px
+    
+  ul
+    display: inline-block
+    
+    li
+      float: left
+      margin-left: 15px
+      i
+        font-size: 40px
+        //color: $primary-gray
+        color: #727272
+        text-shadow: 0 0 10px black
+        &:hover
+          //color: $hover-gray
+          //text-shadow: 0 0 4px $hover-blue
+          //cursor: pointer
+
+.buildInv
+  +border-margin(2px)
+  min-height: 1000px
+  
+  h4
+    padding-bottom: 30px
+        
+.stats 
+  +border-margin(2px)
+  min-height: 1000px
+  background-color: transparent !important
+  margin-top: 160px
+  height: 100%
+  
+  h4
+    padding-bottom: 20px
+  
+.build-calc-table
+  height: 100%
+  margin-top: 20px
+  width: 100%
+  border-collapse: collapse
+
+  tr
+    &:nth-child(odd)
+      background-color: rgba(0,0,0,0.5)
+
+    td
+      padding: .5em 0
+      &:first-child
+        text-align: left
+        padding-left: 5%
+      &:nth-child(2)
+        text-align: right
+        color: $hover-blue
+        padding-right: 5%
+  
+  
+.Off1, .Off2
+  margin-top: -30px
+
+.weapons, .armor, .accessories, .food
+  padding-bottom: 30px
+  
+  
+.armor>ul
+  margin-left: calc(50% - 100px)
+
+.accessories
+  
+  &>ul
+    margin-left: calc(50% - 50px)
+    
+  .infusBuild
+    margin: -64px 0 0 70px
+      
+
+ul
+  padding: 0
+  list-style-type: none
+  
+  li
+    padding-bottom: 15px
+    
+    .upgradeBuild, .infusBuild
+      float: left
+      margin: -64px 0 0 90px
+      
+    .controlsLeft
+      float: left
+      margin-left: -20px
+      text-align: center
+      font-size: 12px
+      
+      li
+        padding: 0
+    
+    .infusBuild
+      margin-left: 150px
+      
+      .controlsRight
+        text-align: center
+        font-size: 12px
+        margin: -32px 0 0 37px
+        
+        li
+          padding: 0
+    
+    .weapSigil
+      float: left
+      margin: -52px 0 0 60px
+        
+      .controlsRight
+        text-align: center
+        font-size: 12px
+        margin: -32px 0 0 37px
+        
+        li
+          padding: 0
+    
+    .secondaryWeap
+      margin-top: -12px
+
+.food
+  padding-top: 15px
+      
+.weaponsOffset
+  
+  div>ul
+    margin: auto
+    padding-left: 20px
+  
+  .controlsRight
+    padding: 0
+  
+.foodOffset
+  padding-top: 15px
+  
+  div>ul
+    margin: auto
+    padding-left: 20px
+      
+.aquatic
+  margin-top: 30px
+  
+.statBreakdown
+  
+  h5
+    color: $hover-blue
+    font-weight: bold
+      
+.text-center
+  text-align: center
+
+.text-left
+  text-align: left
+  
+.text-right
+  text-align: right
+  
+.itemBuild
+  +item-box(64px, 64px, 30px)
+
+.upgradeBuild
+  +item-box(52px, 52px, 20px)
+
+.weapBuild
+  +item-box(52px, 52px, 20px)
+  
+.infusBuild
+  +item-box(32px, 32px, 10px)
+  
+.foodBuild
+  font-size: 30px
+  padding: 5px 13px
+  +item-box(52px, 52px, 20px) 
+  
+  i
+    opacity: 0.15
+  
+.weapSigil
+  +item-box(32px, 32px, 10px)
+
+.itemInset
+  +img-inset(50px, 6px, 0.15)
+
+.upgradeInset
+  +img-inset(34px, 8px, 0.05)
+
+.weapInset
+  +img-inset(50px, 2px, 0.15)
+  
+.infusInset
+  +img-inset(27px, 2px, 0.15)
+  
+.sigilWeapInset
+  +img-inset(27px, 2px, 0.15)
+  
+.foodInset
+  margin: -52px 0 0 56px
+  
+.wsetInset
+  padding: 0 0 20px 45px
+  margin-top: -15px
+  
+.saveBuild
+  height: 31px
+  margin: 50px 0
+  
+.buildItem
+  background-color: $hover-gray-light
+  padding: 10px 0 0 0
+  margin-bottom: 25px
+  
+  p
+    font-size: 13px
+    font-family: "Lato", sans-serif
+    color: $accent-gray
+    padding: 0
+    margin: 4px 0
+    font-weight: 900
+    
+  .buildClass
+    color: $text
+    
+  .buildType
+    font-size: 40px
+    background-size: contain
+    background-position: 7px center
+    background-repeat: no-repeat
+    height: 80px
+    
+    i
+      position: relative
+    
+  .buildName
+    background-color: $accent-light-gray
+    padding: 0
+    margin-top: 5px
+    
+    h5
+      font-weight: bolder
+      
+.saveBuild
+  
+  a
+    padding: 20px 20px
+    background-color: $item
+    color: $hover-blue
+    font-family: Lato, sans-serif
+    font-size: 14px
+    font-weight: bold
+    border: solid 1px $hover-blue
+    transition: all .4s ease
+    &:hover
+      border: none
+      text-decoration: none
+      background-color: $hover-blue
+      color: white
+   
+/* Build Types */      
+      
+.backline
+  background-image: url('../images/calculator/buildType-BL.png')
+  
+  i
+    top: 25px
+  
+.frontline
+  background-image: url('../images/calculator/buildType-FL.png')
+  
+  i
+    top: 15px
+    left: -2px
+  
+.utility
+  background-image: url('../images/calculator/buildType-U.png')
+  
+  i
+    top: 20px
+  
+.support
+  background-image: url('../images/calculator/buildType-S.png')
+  
+  i
+    left: 5px
+    top: 15px
+  
+.pick
+  background-image: url('../images/calculator/buildType-P.png')
+  
+  i
+    left: 7px
+    top: 20px
+  
+.icon-elementalist, .icon-tempest , .eleColor
+  color: #e45c4a
+.eleColor
+  text-shadow: 0px 0px 20px #e45c4a
+
+.icon-necro, .icon-reaper, .necroColor
+  color: #34b853
+.necroColor
+  text-shadow: 0px 0px 20px #34b853
+
+.icon-mesmer, .icon-chrono, .mesColor
+  color: #c149d2
+.mesColor
+  text-shadow: 0px 0px 20px #c149d2
+
+.icon-engineer, .icon-scrapper, .engiColor
+  color: #c77743
+.engiColor
+  text-shadow: 0px 0px 20px #c77743
+
+.icon-thief, .icon-daredevil, .thiefColor
+  color: #a55b70
+.thiefColor
+  text-shadow: 0px 0px 20px #a55b70
+
+.icon-ranger, .icon-druid, .rangerColor
+  color: #92d743
+.rangerColor
+  text-shadow: 0px 0px 20px #92d743
+
+.icon-guard, .icon-dragonhunter, .guardColor 
+  color: #4ac8e4
+.guardColor
+  text-shadow: 0px 0px 20px #4ac8e4
+
+.icon-revenant, .icon-herald, .revColor
+  color: #963820
+.revColor
+  text-shadow: 0px 0px 20px #963820
+  
+.icon-warrior, .icon-berserker, .warColor
+  color: #f5ab3c
+.warColor
+  text-shadow: 0px 0px 20px #f5ab3c
+
+  
+/* Custom Scrollbar */
+
+.scrollbar
+  max-height: 800px
+  overflow-y: scroll
+  &::-webkit-scrollbar-track
+    background-color: $item
+    opacity: 0.5
+  &::-webkit-scrollbar
+    width: 3px
+  &::-webkit-scrollbar-thumb
+    background-color: rgba(255,255,255,0.1)
+  
+/* Specs */
+
+.spec1, .spec2, .spec3
+  min-height: 200px
+  border-bottom: solid 5px rgba(0,0,0,0.3)
+  position: static
+  z-index: 0
+  .star
+    min-width: 200px
+    margin-top: 45px
+  .leftSelect
+    position: absolute
+    left: 0
+    top: 0
+    width: 50px
+    height: 300px
+    background-color: rgba(0,0,0,0.3)
+    &:hover
+      background-color: rgba(0,0,0,0.7)
+      cursor: pointer
+    span
+      color: rgba(255,255,255,0.1)
+      font-size: 50px
+      margin-top: 125px
+      margin-left: 8px
+      
+.specWrap
+  padding: 0
+      
+.slideout
+  float: left
+  z-index: 1
+  background-color: rgba(20,20,20,0.9)
+  left: 0px
+  top: 0px
+  position: absolute
+  height: 300px
+  border-bottom: solid 5px rgba(0,0,0,0.3)
+  ul
+    padding-left: 25px
+    li
+      float: left
+      display: inline-block
+      margin: 0 10px
+      padding: 0
+      .star
+        width: 100px
+    
+/* Mobile slideout traits */    
+.slideoutMobile
+  float: left
+  z-index: 1
+  background-color: rgba(20,20,20,0.9)
+  left: 0px
+  top: 0px
+  position: absolute
+  height: 206px
+  border-bottom: solid 5px rgba(0,0,0,0.3)
+  .hex
+    margin: 25px 10px 0 0
+    min-width: 64px
+  ul
+    padding-left: 25px
+    li
+      float: left
+      display: inline-block
+      padding: 0
+  .leftSelect1, .leftSelect2, .leftSelect3
+    position: absolute
+    left: 0
+    top: 0
+    width: 30px
+    height: 206px
+    background-color: rgba(0,0,0,0.3)
+    &:hover
+      background-color: rgba(0,0,0,0.7)
+      cursor: pointer
+    span
+      color: rgba(255,255,255,0.4)
+      font-size: 20px
+      margin-top: 90px
+      margin-left: 5px
+
+#specSlideOut1, #specSlideOut2, #specSlideOut3
+  .leftSelect
+    left: -15px
+    span
+      margin-left: 5px
+      
+.minor
+  height: 40px
+  margin-top: 80px
+  
+.traitLine
+  margin-top: 45px
+  &>img, &>ul
+    float: left
+    padding-left: 4vw
+    li
+      padding-bottom: 40px
+      /* &:nth-child(2):hover:before, &:nth-child(2):hover:after */
+
+.traitLineM
+  height: 200px
+  ul
+    margin-top: 13px
+    &>li
+      filter: drop-shadow(1px 1px 0 white) drop-shadow(-1px 1px 0 white) drop-shadow(1px -1px 0 white) drop-shadow(-1px -1px 0 white)
+      float: left
+      position: relative
+      right: 0
+      padding-left: 35px
+  .leftSelect1, .leftSelect2, .leftSelect3
+    position: absolute
+    left: 0
+    top: 0
+    width: 30px
+    height: 206px
+    background-color: rgba(0,0,0,0.3)
+    &:hover
+      background-color: rgba(0,0,0,0.7)
+      cursor: pointer
+    span
+      color: rgba(255,255,255,0.4)
+      font-size: 20px
+      margin-top: 90px
+      margin-left: 8px
+  
+/* Stars */
+
+=fontawesome()
+  font-family: Fontawesome
+  display: inline-block
+  font-size: 16px
+  color: $hover-blue
+  position: relative
+  top: 2px
+  left: 10px
+
+.halfStar:after
+  +fontawesome
+  content: "\f123  \f006  \f006  \f006  \f006"
+  
+.oneStar:after
+  +fontawesome
+  content: "\f005  \f006  \f006  \f006  \f006"
+
+.oneHalfStar:after
+  +fontawesome
+  content: "\f005  \f123  \f006  \f006  \f006"
+    
+.twoStar:after
+  +fontawesome
+  content: "\f005  \f005  \f006  \f006  \f006"
+    
+.twoHalfStar:after
+  +fontawesome
+  content: "\f005  \f005  \f123  \f006  \f006"
+    
+.threeStar:after
+  +fontawesome
+  content: "\f005  \f005  \f005  \f006  \f006"
+    
+.threeHalfStar:after
+  +fontawesome
+  content: "\f005  \f005  \f005  \f123  \f006"
+    
+.fourStar:after
+  +fontawesome
+  content: "\f005  \f005  \f005  \f005  \f006"
+    
+.fourHalfStar:after
+  +fontawesome
+  content: "\f005  \f005  \f005  \f005  \f123"
+    
+.fiveStar:after
+  +fontawesome
+  content: "\f005  \f005  \f005  \f005  \f005"
+
+/* Skills */
+
+.numberOutline
+  border: solid 1px red
+
+.utilitySkills ul li:hover
+  cursor: pointer
+
+.skillHighlight
+  outline: 3px solid yellow
+  outline-offset: -3px
+
+.skillsLand, .skillsWater
+  padding-top: 150px
+  .weaponSkills
+    // padding-left: 3vw commented by mal
+    ul
+      float: left
+      &>li
+        float: left
+        display: inline-block
+        margin-right: 2px
+        height: 60px
+        &>.number
+          border-radius: 20px
+          height: 16px
+          width: 16px
+          background-color: black
+          color: white
+          font-size: 10px
+          text-align: center
+          position: absolute
+          bottom: 7px
+          margin-left: 22px
+          padding: 1px 0 0 1px
+      &>li:first-child
+        // margin: 12px 25px 0 0 commented by mal
+  .utilitySkills
+    // padding-left: 3vw commented by Mal
+    ul
+      float: left
+      &>li
+        float: left
+        display: inline-block
+        margin-right: 2px
+        max-height: 60px
+        &:first-child
+          margin-right: 10px
+        &:last-child
+          margin-left: 10px
+        &>.number
+          border-radius: 20px
+          height: 16px
+          width: 16px
+          background-color: black
+          color: white
+          font-size: 10px
+          text-align: center
+          position: absolute
+          top: -8px
+          margin-left: 22px
+          padding: 1px 0 0 1px
+        &>.numberOutline
+          border: solid 1px red
+        .utilitySelector
+          position: absolute
+          bottom: -5px
+          font-size: 12px
+          color: white
+          text-align: center
+          width: 60px
+          height: 15px
+          background-color: $selector
+          &:hover
+            cursor: pointer
+    .healWrapper, .healWrapperW
+      +utilWrap(-18px, 65px)
+    .util1Wrapper, .util1WrapperW
+      +utilWrap(55px, 65px)
+    .util2Wrapper, .util2WrapperW
+      +utilWrap(121px, 65px)
+    .util3Wrapper, .util3WrapperW
+      +utilWrap(187px, 65px)
+    .eliteWrapper, .eliteWrapperW
+      +utilWrap(263px, 65px)
+    
+    
+.skillsLand      
+  .classMechanic
+    float: left
+    position: absolute
+    left: 2.6vw
+    top: 215px
+    // top: 50px
+
+    ul
+      float: left
+      .activeElement
+        height: 50px
+        width: 50px
+        position: relative
+        bottom: 10px
+      .inactiveElement
+        height: 40px
+        width: 40px
+      &>li
+        float: left
+        display: inline-block
+        margin-right: 2px
+        height: 40px
+        &:hover
+          cursor: pointer
+        &>.number
+          border-radius: 20px
+          height: 15px
+          width: 15px
+          background-color: black
+          color: white
+          font-size: 8px
+          text-align: center
+          position: absolute
+          bottom: 0px
+          margin-left: 12px
+          padding-top: 2px
+        &>.numberActive
+          margin-left: 18px
+      &>li:first-child
+        padding-right: 18px
+      &>li:not(:first-child)
+        margin: 15px 2px 0 0
+      
+.skillsWater
+  .classMechanicW
+    float: left
+    position: absolute
+    left: 3vw
+    top: -80px
+    ul
+      float: left
+      .activeElement
+        height: 50px
+        width: 50px
+        position: relative
+        bottom: 10px
+      .inactiveElement
+        height: 40px
+        width: 40px
+      &>li
+        float: left
+        display: inline-block
+        margin-right: 2px
+        height: 40px
+        &:hover
+          cursor: pointer
+        #iconUW
+          margin-top: 5px
+          width: 40px
+          height: 40px
+        &>.number
+          border-radius: 20px
+          height: 15px
+          width: 15px
+          background-color: black
+          color: white
+          font-size: 8px
+          text-align: center
+          position: absolute
+          bottom: 0px
+          margin-left: 12px
+          padding-top: 2px
+        &>.numberActive
+          margin-left: 18px
+      &>li:first-child
+        padding-right: 18px
+        margin: 10px 5px 0 0
+      &>li:not(:first-child)
+        margin: 15px 2px 0 0
+
+/* Engineer */
+#gyro, #forge
+  &:last-child
+    margin-left: 10px
+      
+/* Thief */      
+      
+.thief
+  .fSkill
+    .stealWrapper
+      +utilWrap(59px, -46px)
+      height: 50px
+      padding-right: 0
+      ul li
+        height: 100%
+        margin-top: 0
+        font-size: 20px
+        margin-left: 4px
+        line-height: 35px
+        color: $text
+        &:first-child
+          padding: 0
+          margin-left: 0
+        &:last-child
+          padding: 0
+          margin-left: 5px
+        &:hover
+          color: $scourge1
+      
+.skillsBoons
+  padding-top: 40px
+  height: 100%
+
+.downed
+  float: left
+  filter: drop-shadow(0 0 5px rgba(255,255,255,0.5))
+  max-width: 70px
+  margin-left: 20px
+  &:hover
+    cursor: pointer
+
+.skillChange
+  position: absolute
+  top: -26px
+  height: 40px
+  span
+    width: 40px
+    height: 40px
+    line-height: 40px
+    font-size: 20px
+    background: linear-gradient(rgba(0,0,0,0), $selector)
+    text-align: center
+    &:hover
+      color: $scourge2
+
+.utilitySkills
+  .skillChangeBottom
+    bottom: -25px
+    
+.skillChangeBottom
+  position: absolute
+  bottom: -22px
+  height: 30px
+  width: 60px
+  span
+    width: 60px
+    height: 30px
+    line-height: 40px
+    font-size: 20px
+    background: linear-gradient($secondary-gray, rgba(0,0,0,0))
+    text-align: center
+    &:hover
+      color: $scourge2
+      cursor: pointer
+  
+/* Guard */
+.pages
+  background-image: url("../images/calculatpr/pages.png")
+  background-position: left top
+  background-size: cover
+  display: block
+  padding: 0
+  width: 118px /*Change to 187px to add the 3 extra traited pages*/
+  height: 44px
+  position: relative
+  left: 5px
+
+/* Warrior */
+=warriorBG($color1,$color2)
+  background: -webkit-linear-gradient(left,$color1,$color2)
+  background: -o-linear-gradient(right,$color1,$color2)
+  background: -moz-linear-gradient(right,$color1,$color2)
+  background: linear-gradient(to right,$color1,$color2)
+
+.skillsLand
+  .classMechanic
+    margin-left: 10px
+    ul li
+      #iconL
+        margin-top: 15px
+        width: 40px
+        height: 40px
+    .warrior
+      .adr1, .adr2, .adr3
+        height: 17px
+        width: 60px
+        border: 1px solid $selector
+        padding: 0
+        margin-right: 10px
+        position: relative
+        top: 12px
+      .adr1
+        background-color: $war1
+      .adr2
+        +warriorBG($war1,$war2)
+      .adr3
+        +warriorBG($war2,$war3)
+    .berserker
+      .adr1, .adr2, .adr3
+        height: 17px
+        width: 60px
+        border: 1px solid $selector
+        padding: 0
+        margin-right: 10px
+        position: relative
+        top: 12px
+      .adr1
+        background-color: $war1
+      .adr2
+        +warriorBG($war1,$war2)
+      .adr3
+        +warriorBG($war2,$war3)
+      .adrBers
+        width: 200px
+        +warriorBG($war1,$war3)
+      .fSkill
+        margin-right: 10px
+    .spellbreaker
+      .adr1, .adr2
+        height: 17px
+        width: 70px
+        border: 1px solid $selector
+        padding: 0
+        margin-right: 10px
+        position: relative
+        top: 12px
+      .adr1
+        +warriorBG($war1,$war2)
+      .adr2
+        +warriorBG($war2,$war3)
+      .fSkill
+        margin-right: 10px
+
+/* Ranger */
+
+.skillsLand
+  .classMechanic
+    position: absolute
+    z-index: 2
+    .ranger, .druid, .soulbeast
+      .petIcon
+        transform: scale(0.75)
+        opacity: 0.5
+        margin-right: 10px
+      .fSkill
+        margin-left: 5px
+        margin-right: 10px
+      .beastSkill
+        margin-right: 3px
+        margin-left: 3px
+      .beastAttr
+        margin-right: 10px
+        margin-top: 19px
+      .petSelect
+        transform: scale(1.2)
+        margin-right: 10px
+        .utilitySelector
+          position: absolute
+          bottom: -10px
+          background-color: $selector
+          font-size: 8px
+          width: 40px
+          text-align: center
+          height: 10px
+      .petHP
+        padding: 0
+        height: 10px
+        width: 170px
+        border: 1px solid $selector
+        position: absolute
+        z-index: 1
+        bottom: -10px
+        left: 60px
+        background-color: #8e0000
+      .petWrapper
+        background-color: rgba(43,51,53,0.95)
+        height: 130px
+        width: 300px
+        position: absolute
+        z-index: 10
+        top: 54px
+        right: -50px
+        .petClasses
+          border-bottom: 1px solid white
+          padding-top: 5px
+          li
+            padding: 2px
+            margin: 0
+            height: 30px
+            img
+              height: 25px
+              width: auto
+              opacity: 0.5
+            &:first-child
+              padding: 0 1px 0 1px
+              margin-top: 0
+        .pet
+          margin-left: 15px
+          li:first-child
+            padding: 0 0 15px 0
+            margin-top: 15px
+          
+/* Necromancer */
+=necroBG($color1,$color2)
+  background: -webkit-linear-gradient(left,$color1,$color2)
+  background: -o-linear-gradient(right,$color1,$color2)
+  background: -moz-linear-gradient(right,$color1,$color2)
+  background: linear-gradient(to right,$color1,$color2)
+
+.skillsLand
+  .classMechanic
+    .necromancer, .reaper
+      .lifeForce
+        height: 17px
+        width: 180px
+        border: 1px solid $selector
+        padding: 0
+        margin-left: 10px
+        position: relative
+        top: 12px
+        +necroBG($necro1,$necro2)
+    .scourge
+      .shade
+        height: 40px
+        width: 40px
+        background-image: url("../images/calculator/shades.png")
+        background-position: top left //change this to "top right" to display the single shade
+        background-size: cover
+      .lifeForce
+        height: 10px
+        width: 263px
+        border: 1px solid $selector
+        padding: 0
+        margin-left: 10px
+        position: relative
+        top: 56px
+        left: -263px
+        +necroBG($scourge1,$scourge2)
+        
+/* Thief */
+.skillsLand
+  .classMechanic
+    .thief
+      .stealth
+        margin-top: 19px
+        margin-right: 8px
+      .utilitySelector
+        position: absolute
+        top: 5px
+        background-color: $selector
+        font-size: 8px
+        width: 40px
+        text-align: center
+        height: 10px
+      .fSkill
+        margin-right: 5px
+      .init1
+        margin-top: -8px
+      .init2
+        margin-left: -120px
+        margin-top: 8px
+      .initiative
+        height: 8px
+        width: 8px
+        border: 1px solid $thief1
+        transform: rotate(45deg)
+        padding: 0
+        margin: 30px 4px 0 4px
+        background-color: $thief2
+      .initiative.preparedness /* show this for the thief Trickery minor trait "Preparedness" */
+        display: none
+        
+/* Mesmer */
+.skillsLand
+  .classMechanic
+    .mesmer, .chronomancer, .mirage
+      .cloak
+        margin-top: 19px
+        margin-right: 8px
+      .clone
+        padding: 0
+        height: 25px
+        width: 25px
+        border-radius: 30px
+        border: 2px solid $mesmer2
+        background-color: $mesmer1
+        margin-left: 5px
+        margin-top: 23px
+
+/* Revenant */
+.skillsLand
+  .classMechanic
+    .revenant, .herald
+      .heraldF2
+        margin-right: 5px
+        .number
+          border-radius: 20px
+          height: 15px
+          width: 15px
+          background-color: black
+          color: white
+          font-size: 8px
+          text-align: center
+          position: absolute
+          bottom: 0px
+          margin-left: -37px
+          padding-top: 2px
+      .energyPercent
+        position: absolute
+        right: 0
+        text-align: center
+        letter-spacing: 0px
+        color: white
+        width: 180px
+        i
+          font-size: 10px
+          font-weight: bolder
+          letter-spacing: -4px
+      .energy
+        height: 17px
+        width: 180px
+        border: 1px solid $selector
+        padding: 0
+        margin-left: 10px
+        position: relative
+        top: 25px
+      .shiro
+        background-color: $shiro
+      .mallyx
+        background-color: $mallyx
+      .ventari
+        background-color: $ventari
+      .ironhammer
+        background-color: $ironhammer
+      .glint
+        background-color: $glint
+      .kalla
+        background-color: $kalla
+      .fSkill
+        border: solid 1px black
+        margin-right: 5px
+        .utilitySelector
+          position: absolute
+          bottom: 0
+          background-color: $selector
+          font-size: 8px
+          width: 40px
+          text-align: center
+          height: 10px
+      .revLarge
+        transform: scale(1.2)
+        .utilitySelector
+          position: absolute
+          bottom: -10px
+          background-color: $selector
+          font-size: 8px
+          width: 40px
+          text-align: center
+          height: 10px
+      .stanceWrap
+        position: absolute
+        top: 71px
+        width: 200px
+        height: 60px
+        background-color: $selector
+        ul li
+          padding: 0 4px 0 4px
+          margin-top: 10px
+      .revStance1
+        left: -5px
+      .revStance2
+        left: 42px
+    .revenant
+      .number
+        margin-left: 33px
+        bottom: 20px
+        left: 6px
+        z-index: 5
+        border-radius: 20px
+        height: 15px
+        width: 15px
+        background-color: black
+        color: white
+        font-size: 8px
+        text-align: center
+        position: absolute
+        padding-top: 0px
+        line-height: 15px
+    .herald, .renegade
+      .number
+        margin-left: 33px
+        bottom: 20px
+        left: 109px
+        z-index: 5
+        border-radius: 20px
+        height: 15px
+        width: 15px
+        background-color: black
+        color: white
+        font-size: 8px
+        text-align: center
+        position: absolute
+        padding-top: 0px
+        line-height: 15px
+    .renegade
+      .energyPercent
+        position: absolute
+        left: 162px
+        top: 20px
+        text-align: center
+        letter-spacing: 0px
+        color: white
+        font-size: 10px
+        width: 100px
+        height: 20px
+        i
+          font-size: 8px
+          font-weight: bolder
+          letter-spacing: -4px
+      .energy
+        height: 15px
+        width: 100px
+        border: 1px solid $selector
+        padding: 0
+        margin-left: 10px
+        position: relative
+        top: 32px
+        margin-right: 15px
+      .shiro
+        background-color: $shiro
+      .mallyx
+        background-color: $mallyx
+      .ventari
+        background-color: $ventari
+      .ironhammer
+        background-color: $ironhammer
+      .glint
+        background-color: $glint
+      .kalla
+        background-color: $kalla
+      .fSkill
+        border: solid 1px black
+        margin-right: 5px
+        .utilitySelector
+          position: absolute
+          bottom: 0
+          background-color: $selector
+          font-size: 8px
+          width: 40px
+          text-align: center
+          height: 10px
+      .revLarge
+        transform: scale(1.2)
+        .utilitySelector
+          position: absolute
+          bottom: -10px
+          background-color: $selector
+          font-size: 8px
+          width: 40px
+          text-align: center
+          height: 10px
+      .stanceWrap
+        position: absolute
+        top: 71px
+        width: 250px
+        height: 60px
+        background-color: $selector
+        ul li
+          padding: 0 4px 0 4px
+          margin-top: 10px
+      .revStance1
+        left: -5px
+      .revStance2
+        left: 42px
+      .number
+        margin-left: -13px
+      .fSkill1.citadel
+        margin-right: 2px
+        .number
+          position: static
+          margin-left: 13px
+          margin-top: -9px
+        
+                
+/* Comparer */
+
+.buildPicker
+  padding: 0
+  .buildInv
+    border: none
+    min-height: 800px
+    .scrollbar
+      max-height: 600px
+  .thisClass, .allClass, .thisClass2, .allClass2
+    cursor: pointer
+    p
+      border: solid 1px $text
+      color: $text
+      padding: 5px 5px
+      font-size: 14px
+      font-weight: bold
+      margin: 30px 0
+      font-family: "Lato", sans-serif
+      
+.statsB
+  table
+    tr
+      td
+        &:nth-child(2)
+          color: $red
+
+.statsA, .statsB
+  margin-top: 50px
+  background-color: rgba(0,0,0,0)
+  .titleA
+    color: $hover-blue
+  .titleB
+    color: $red
+
+.compareChart
+  min-height: 800px
+  h3
+    font-weight: bolder
+    font-size: 24px
+    color: $text
+  img
+    margin-top: 100px
+  .linkCompare
+    margin-top: 100px
+    input
+      background-color: $hover-gray
+      border: 1px solid $selector
+    a, a:hover
+      color: $hover-blue
+      font-size: 16px
+  
+/* Media Queries */
+@media (max-width: 1474px)
+  .downed
+    display: none
+
+@media (max-width: 1423px)
+  .wset ul li i
+    font-size: 35px
+
+@media (max-width: 1303px)
+  .wset ul li i
+    font-size: 30px
+    
+@media (max-width: 345px)
+  .wset ul li i
+    font-size: 25px
+    
+@media (max-width: 993px)
+  .stats, .buildInv
+    min-height: 0
+
+@media (max-width: 1024px) and (min-width: 768px)
+  .buildInv
+    display: none
+  .stats
+    display: none
+  .classSelector
+    height: 240px
+    .professions2
+      padding-top: 30px
+      .options1
+        margin-left: 0
+      h1
+        width: 100%
+    .professions
+      background: none
+      .expansion
+        position: absolute
+        bottom: 40px
+  .buildSections
+    width: 100%
+    
+@media (max-width: 1199px)
+  .weapons
+    padding-top: 0  
+
+@media (max-width: 768px)
+  .traitLine
+    &>img, &>ul
+      padding-left: 10px
+  
+  .spec1
+    background-image: url('../images/calculator/fire-bg.png')
+    background-size: cover
+    background-position: left center
+    background-repeat: no-repeat
+  
+  .spec2
+    background-image: url('../images/calculator/air-bg.png')
+    background-size: cover
+    background-position: left center
+    background-repeat: no-repeat
+
+  .spec3
+    background-image: url('../images/calculator/tempest-bg.png')
+    background-size: cover
+    background-position: left center
+    background-repeat: no-repeat
+  
+  .skillsLand, .skillsWater
+    .weaponSkills
+      ul
+        li
+          img
+            max-height: 50px
+            max-width: 50px
+          .number
+            margin-left: 18px
+            bottom: -58px
+            
+@media (max-width: 1352px)
+  .skillsLand, .skillsWater
+    height: 300px
+    .weaponSkills, .utilitySkills
+      ul
+        #liSwap
+          margin: 0
+        &>li
+          max-height: 50px
+          #swap
+            height: 50px
+            width: 10px
+          img
+            height: 50px
+            width: 50px
+          &>.utilitySelector
+            width: 50px
+            &:hover
+              cursor: pointer
+          &>.number
+            margin-left: 18px
+            
+@media (max-width: 430px)
+  .skillsLand, .skillsWater
+    .classMechanic
+      .berserker
+        .adr1, .adr2, .adr3
+          height: 17px
+          width: 30px
+          border: 1px solid $selector
+          padding: 0
+          margin-right: 10px
+          position: relative
+          top: 12px
+        .adrBers
+          width: 110px
+          +warriorBG($war1,$war3)
+      .firebrand
+        .pages
+          height: 25px
+          margin-top: 25px
+          width: 75px //Change to 118px for traited extra pages
+  .herald, .revenant
+    .energy, .energyPercent
+      max-width: 100px
+    .energyPercent
+      font-size: 6px
+      b
+        font-size: 10px
+      
+  .skillsLand, .skillsWater
+    .weaponSkills, .utilitySkills
+      margin-bottom: 25px
+      .classMechanicW
+        ul>li
+          .number
+            margin-left: 12px
+            bottom: 0px
+          .numberActive
+            margin-left: 18px
+      ul
+        margin-bottom: 50px
+        #liSwap1, #liSwap2
+          margin: 12px 25px 0 0
+        &>li
+          max-height: 50px
+          .skillChangeBottom
+            width: 50px
+            span
+              width: 50px
+          #swap1, #swap2
+            height: 25px
+            width: 25px
+          img
+            height: 50px
+            width: 50px
+          &>.number
+            margin-left: 18px
+    .weaponSkills
+      height: 60px
+      ul
+        &>li
+          .number
+            top: -8px
+    .utilitySkills
+      height: 75px
+      ul
+        margin-left: 50px
+        &>li
+          .number
+            top: 8px
+          &:first-child, &:last-child
+            margin: 0 2px 0 0
+      .healWrapper, .healWrapperW
+        +utilWrap(61px, 80px)
+      .util1Wrapper, .util1WrapperW
+        +utilWrap(61px, 80px)
+      .util2Wrapper, .util2WrapperW
+        +utilWrap(77px, 80px)
+      .util3Wrapper, .util3WrapperW
+        +utilWrap(91px, 80px)
+      .eliteWrapper, .eliteWrapperW
+        +utilWrap(91px, 80px)
+                
+/*Neon*/    
+.professions
+  background-image: url("../images/calculator/profBG.png")
+  background-repeat: no-repeat
+  background-size: contain
+.professions, .profMobile
+  ul li 
+    span
+      text-decoration: none
+      transition: all 0.5s
+    .icon-elementalist, .icon-tempest, .icon-weaver
+      color: $text
+      animation: none
+      &:hover
+        color: #fff
+        animation: ele 1.5s ease-in-out infinite alternate
+    .icon-elementalist.active, .icon-tempest.active, .icon-weaver.active
+      color: #fff
+      animation: ele 1.5s ease-in-out infinite alternate
+      &:hover
+        color: $text
+        animation: none
+    .icon-warrior, .icon-berserker, .icon-spellbreaker
+      color: $text
+      animation: none
+      &:hover
+        color: #fff
+        animation: war 1.5s ease-in-out infinite alternate
+    .icon-warrior.active, .icon-berserker.active, .icon-spellbreaker.active
+      color: #fff
+      animation: war 1.5s ease-in-out infinite alternate
+      &:hover
+        color: $text
+        animation: none
+    .icon-ranger, .icon-druid, .icon-soulbeast
+      color: $text
+      animation: none
+      &:hover
+        color: #fff
+        animation: ranger 1.5s ease-in-out infinite alternate
+    .icon-ranger.active, .icon-druid.active, .icon-soulbeast.active
+      color: #fff
+      animation: ranger 1.5s ease-in-out infinite alternate
+      &:hover
+        color: $text
+        animation: none
+    .icon-necro, .icon-reaper, .icon-scourge
+      color: $text
+      animation: none
+      &:hover
+        color: #fff
+        animation: necro 1.5s ease-in-out infinite alternate
+    .icon-necro.active, .icon-reaper.active, .icon-scourge.active
+      color: #fff
+      animation: necro 1.5s ease-in-out infinite alternate
+      &:hover
+        color: $text
+        animation: none
+    .icon-guard, .icon-dragonhunter, .icon-firebrand
+      color: $text
+      animation: none
+      &:hover
+        color: #fff
+        animation: guard 1.5s ease-in-out infinite alternate
+    .icon-guard.active, .icon-dragonhunter.active, .icon-firebrand.active
+      color: #fff
+      animation: guard 1.5s ease-in-out infinite alternate
+      &:hover
+        color: $text
+        animation: none
+    .icon-thief, .icon-daredevil, .icon-deadeye
+      color: $text
+      animation: none
+      &:hover
+        color: #fff
+        animation: thief 1.5s ease-in-out infinite alternate
+    .icon-thief.active, .icon-daredevil.active, .icon-deadeye.active
+      color: #fff
+      animation: thief 1.5s ease-in-out infinite alternate
+      &:hover
+        color: $text
+        animation: none
+    .icon-engineer, .icon-scrapper, .icon-holosmith
+      color: $text
+      animation: none
+      &:hover
+        color: #fff
+        animation: engineer 1.5s ease-in-out infinite alternate
+    .icon-engineer.active, .icon-scrapper.active, .icon-holosmith.active
+      color: #fff
+      animation: engineer 1.5s ease-in-out infinite alternate
+      &:hover
+        color: $text
+        animation: none
+    .icon-mesmer, .icon-chrono, .icon-mirage
+      color: $text
+      animation: none
+      &:hover
+        color: #fff
+        animation: mesmer 1.5s ease-in-out infinite alternate
+    .icon-mesmer.active, .icon-chrono.active, .icon-mirage.active
+      color: #fff
+      animation: mesmer 1.5s ease-in-out infinite alternate
+      &:hover
+        color: $text
+        animation: none
+    .icon-revenant, .icon-herald, .icon-renegade
+      color: $text
+      animation: none
+      &:hover
+        color: #fff
+        animation: rev 1.5s ease-in-out infinite alternate
+    .icon-revenant.active, .icon-herald.active, .icon-renegade.active
+      color: #fff
+      animation: rev 1.5s ease-in-out infinite alternate
+      &:hover
+        color: $text
+        animation: none
+
+@keyframes ele 
+  from 
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #e45c4a, 0 0 70px #e45c4a, 0 0 80px #e45c4a, 0 0 100px #e45c4a, 0 0 150px #e45c4a
+  to 
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #e45c4a, 0 0 35px #e45c4a, 0 0 40px #e45c4a, 0 0 50px #e45c4a, 0 0 75px #e45c4a
+
+@keyframes war 
+  from 
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #f5ab3c, 0 0 70px #f5ab3c, 0 0 80px #f5ab3c, 0 0 100px #f5ab3c, 0 0 150px #f5ab3c
+  to 
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #f5ab3c, 0 0 35px #f5ab3c, 0 0 40px #f5ab3c, 0 0 50px #f5ab3c, 0 0 75px #f5ab3c
+
+@keyframes ranger 
+  from 
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #92d743, 0 0 70px #92d743, 0 0 80px #92d743, 0 0 100px #92d743, 0 0 150px #92d743
+  to 
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #92d743, 0 0 35px #92d743, 0 0 40px #92d743, 0 0 50px #92d743, 0 0 75px #92d743
+
+@keyframes necro 
+  from 
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #34b853, 0 0 70px #34b853, 0 0 80px #34b853, 0 0 100px #34b853, 0 0 150px #34b853
+  to 
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #34b853, 0 0 35px #34b853, 0 0 40px #34b853, 0 0 50px #34b853, 0 0 75px #34b853
+
+@keyframes guard
+  from
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #4ac8e4, 0 0 70px #4ac8e4, 0 0 80px #4ac8e4, 0 0 100px #4ac8e4, 0 0 150px #4ac8e4
+  to
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #4ac8e4, 0 0 35px #4ac8e4, 0 0 40px #4ac8e4, 0 0 50px #4ac8e4, 0 0 75px #4ac8e4
+
+@keyframes thief
+  from
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #a55b70, 0 0 70px #a55b70, 0 0 80px #a55b70, 0 0 100px #a55b70, 0 0 150px #a55b70
+  to
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #a55b70, 0 0 35px #a55b70, 0 0 40px #a55b70, 0 0 50px #a55b70, 0 0 75px #a55b70
+    
+@keyframes engineer
+  from
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #c77743, 0 0 70px #c77743, 0 0 80px #c77743, 0 0 100px #c77743, 0 0 150px #c77743
+  to
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #c77743, 0 0 35px #c77743, 0 0 40px #c77743, 0 0 50px #c77743, 0 0 75px #c77743
+  
+@keyframes mesmer
+  from
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #c149d2, 0 0 70px #c149d2, 0 0 80px #c149d2, 0 0 100px #c149d2, 0 0 150px #c149d2
+  to
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #c149d2, 0 0 35px #c149d2, 0 0 40px #c149d2, 0 0 50px #c149d2, 0 0 75px #c149d2
+
+@keyframes rev
+  from
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #963820, 0 0 70px #963820, 0 0 80px #963820, 0 0 100px #963820, 0 0 150px #963820
+  to
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #963820, 0 0 35px #963820, 0 0 40px #963820, 0 0 50px #963820, 0 0 75px #963820

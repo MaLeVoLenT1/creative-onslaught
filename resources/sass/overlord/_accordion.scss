@@ -1,0 +1,207 @@
+.overlord-accordion {
+  display: flex;
+  min-height: 115vh;
+  max-height: 115vh;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  list-style-type: none;
+  background-color: rgba(22, 22, 22, 0.96);
+}
+.ol-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: stretch;
+  -ms-flex-align: stretch;
+  align-items: stretch;
+  background-color: #0a0a0a;
+  cursor: pointer;
+  -webkit-transition: all .5s ease;
+  transition: all .5s ease;
+}
+.ol-list.active {
+  flex: 5;
+  -webkit-box-flex: 5;
+  -ms-flex: 5;
+  // background: url('../images/backgrounds/1920x1178.png') no-repeat top;
+  background-size: 125%;
+  cursor: default;
+  padding: 0;
+}
+.ol-list.active .section-content {
+  flex: 4;
+  opacity: 1;
+  transform: scaleX(1);
+  -webkit-box-shadow: rgba(0, 0, 0, 0.7) 0 1px 8px, inset rgba(0, 0, 0, 0.4) 0 0 0 1px;
+  box-shadow: rgba(0, 0, 0, 0.7) 0 1px 8px, inset rgba(0, 0, 0, 0.4) 0 0 0 1px;
+}
+.ol-list .section-title {
+  -webkit-box-flex: 0.1;
+  -ms-flex: 0.1;
+  flex: 0.1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 50px;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  color: white;
+}
+.ol-list .section-title h2 {
+  margin: -15px;
+  -webkit-transform: rotate(-90deg);
+  transform: rotate(-90deg);
+  white-space: nowrap;
+}
+.ol-list .section-content {
+  -webkit-box-flex: .5;
+  -ms-flex: .5;
+  flex: .5;
+  display: flex;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  opacity: 0;
+  transition: all .25s .1s ease-out;
+}
+.tabFix{
+  position: relative;
+  right: 30px;
+}
+// Second Attempt
+
+
+/**
+ * https://codepen.io/mraffaele/pen/bwmdmg
+ * https://codepen.io/andrewchaika/pen/rrYKzW
+ */
+
+
+.content-accordion{
+  font-family:Arial, Helvetica, sans-serif;
+  margin:0 auto;
+  font-size:14px;
+  border:1px solid #542437;
+  //border-radius:10px;
+  //width:600px; from the codepen
+  width: 100%; // from me.
+  padding:10px;
+  background:#fff;
+  ul {
+    list-style:none;
+    margin:0;
+    padding:0;
+    li {
+      margin:0;
+      padding:0;
+    }
+  }
+  [type=radio], [type=checkbox]{
+    display: none;
+  }
+  label {
+    display:block;
+    font-size:16px;
+    line-height:16px;
+    background:#D95B43;
+    border:1px solid #542437;
+    color:#542437;
+    text-shadow:1px 1px 1px rgba(255,255,255,0.3);
+    font-weight:700;
+    cursor:pointer;
+    text-transform:uppercase;
+    -webkit-transition: all .2s ease-out;
+    -moz-transition: all .2s ease-out;
+  }
+  ul li label:hover, [type=radio]:checked ~ label, [type=checkbox]:checked ~ label {
+    background:#C02942;
+    color:#FFF;
+    text-shadow:1px 1px 1px rgba(0,0,0,0.5)
+  }
+
+  .content {
+    padding:0 10px;
+    overflow:hidden;
+    border:1px solid #fff; /* Make the border match the background so it fades in nicely */
+    -webkit-transition: all .5s ease-out;
+    -moz-transition: all .5s ease-out;
+  }
+
+}
+
+/* Horizontal */
+/* Unfortunately fixed heights need to be set for this */
+.horizontal {
+  overflow:hidden;
+  height:300px;
+}
+.horizontal ul li {
+  float:left;
+  margin:0 1px 0 0;
+}
+.horizontal ul li label {
+  word-wrap:break-word;
+  letter-spacing:10px;
+  text-align:center;
+  height:280px;
+  padding:10px 0 10px 5px;
+  width:24px;
+  float:left;
+}
+.horizontal ul li .content {
+  height:300px;
+  padding:0;
+  display:inline-block; /* Makes its work in FF */
+  visibility:hidden; /* Chrome bug cant show width < 1px for some reason so need to toggle visibility */
+  width:1px;
+  border-left:0;
+}
+.horizontal [type=radio]:checked ~ label {
+  border-right:0;
+}
+.horizontal ul li label:hover {
+  border:1px solid #542437; /* Again, we don't want the border to disappear on hover */
+}
+.horizontal [type=radio]:checked ~ label ~ .content {
+  visibility:visible;
+  width:443px;
+  padding:0 10px;
+  border:1px solid #542437;
+  border-left:0;
+}
+
+
+.vertical ul li {
+  overflow:hidden;
+  margin:0 0 1px;
+}
+.vertical ul li label {
+  padding:10px;
+}
+.vertical [type=radio]:checked ~ label, .vertical [type=checkbox]:checked ~ label {
+  border-bottom:0;
+}
+.vertical ul li label:hover {
+  border:1px solid #542437;
+}
+.vertical ul li .content {
+  height:0px;
+  border-top:0;
+  transition: all .5s ease-out;
+}
+.vertical [type=checkbox]:checked ~ label ~ .content {
+  height:170px;
+  border:1px solid #542437;
+}
+
+
+
+// Styles
+.menu-style{
+  background-color: #343434;
+}

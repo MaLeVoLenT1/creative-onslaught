@@ -1,0 +1,46 @@
+/* BUTTONS */
+/* Overlord Button Standard */
+.Overlord-Button {
+  -moz-box-shadow: 0 10px 14px -7px #276873;
+  -webkit-box-shadow: 0 10px 14px -7px rgba(39, 104, 115, 0.7);
+  box-shadow: 0 10px 14px -7px rgba(39, 104, 115, 0.7);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0.05, #0e9c95), color-stop(1, #030303));
+  background: -moz-linear-gradient(top, #0e9c95 5%, #030303 100%);
+  background: -webkit-linear-gradient(top, #0e9c95 5%, #030303 100%);
+  background: -o-linear-gradient(top, #0e9c95 5%, #030303 100%);
+  background: -ms-linear-gradient(top, #0e9c95 5%, #030303 100%);
+  background: linear-gradient(to bottom, #0e9c95 5%, #030303 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#0e9c95', endColorstr='#030303',GradientType=0);
+  background-color: #0bd4b8;
+  -moz-border-radius: 1px;
+  -webkit-border-radius: 1px;
+  border-radius: 1px;
+  border: 1px solid rgba(255, 255, 255, 0.24);
+  color: rgba(255, 255, 255, 0.54);
+  font-size: 14px;
+  text-decoration: none;
+  text-shadow: 0 1px 0 #3d768a;
+}
+.Overlord-Button:hover {
+  background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #030303), color-stop(1, #0e9c95));
+  background:-moz-linear-gradient(top, #030303 5%, #0e9c95 100%);
+  background:-webkit-linear-gradient(top, #030303 5%, #0e9c95 100%);
+  background:-o-linear-gradient(top, #030303 5%, #0e9c95 100%);
+  background:-ms-linear-gradient(top, #030303 5%, #0e9c95 100%);
+  background:linear-gradient(to bottom, #030303 5%, #0e9c95 100%);
+  filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#030303', endColorstr='#0e9c95',GradientType=0);
+  background-color:#030303;
+}
+.Overlord-Button:active {
+  position:relative;
+  top:1px;
+}
+
+//Overlord Admin Button
+.save-all-button{
+  border: 1px solid #3b3b3b;
+  padding: 5px 10px;
+  text-align: center;
+  width: 100%;
+  float: left;
+}

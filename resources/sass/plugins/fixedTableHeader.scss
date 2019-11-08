@@ -1,0 +1,223 @@
+/* http://fixedheadertable.com */
+
+.fht-table, .fht-table thead, .fht-table tfoot, .fht-table tbody, .fht-table tr, .fht-table th, .fht-table td
+{margin: 0;padding: 0;}
+/* Containers */
+.fht-table, .table-container {position: relative; width: 100%; border-collapse: collapse; border-spacing: 0; }
+
+// Makes up for Padding.
+.table-container{right: 30px;}
+
+.fht-table-wrapper{
+  overflow: hidden; position: relative;
+
+  .fht-table .fht-cell {
+    overflow: hidden;
+    height: 1px;
+  }
+
+  .fht-tbody{
+    overflow: auto; position: relative;
+  }
+
+  .fht-thead{
+    overflow: hidden; position: relative;
+  }
+
+  .fht-tfoot{
+    overflow: hidden; position: relative;
+  }
+
+  .fht-fixed-column{
+    z-index: 1;
+    top: 0;
+    left: 0;
+    position: absolute;
+    width: 178px;
+    height: 100% !important;
+    border-right: 1px solid #00100e;
+    box-shadow: rgba(0, 0, 0, 0.7) 5px 5px 8px, inset rgba(0, 0, 0, 0.4) 0 0 0 1px;
+    .fht-thead{
+      width: 178px;
+      table{
+        thead{
+          tr{
+            box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            -webkit-box-sizing: border-box;
+            background: rgb(3,3,3);
+            display: -webkit-box;
+            width: 178px;
+            box-shadow:inset 0 0 5px 1.5px #0a564c ,
+            rgba(0, 0, 0, 0.7) 0 1px 8px;
+          }
+        }
+      }
+    }
+    .fht-tbody{
+      overflow: hidden; position: relative;
+      height: 460px !important;
+      width: 178px;
+      border-right: 1px solid #00100e;
+      box-shadow: rgba(0, 0, 0, 0.7) 5px 5px 8px, inset rgba(0, 0, 0, 0.4) 0 0 0 1px;
+    }
+    .overLordTable{
+      th, td {height: 40px !important;}
+    }
+  }
+
+  .fht-fixed-body{
+    top: 0;
+    left: 0;
+    position: absolute;
+    .fht-thead{
+      height: 40px !important;
+      background-color: rgb(3, 3, 3);
+      box-shadow:
+              rgb(10, 86, 76) 0 0 5px 1.5px inset,
+              rgba(0, 0, 0, 0.7) 0 1px 8px;
+    }
+    .fht-tbody{
+      overflow: auto; position: relative;
+    }
+  }
+
+  // Both Fixed Column and Fixed Body
+  .fht-fixed-column, .fht-fixed-body{
+    .overLordTable{
+      th, td {
+        position: relative;
+        text-align: center;
+        a{
+          position: relative;
+          min-width: 150px;
+          padding-right: 5px;
+          padding-left: 5px;
+          float: left;
+        }
+        border-bottom: none !important;
+      }
+    }
+  }
+
+  // Both Body Contents Fixed and none Fixed.
+  .fht-fixed-body .fht-tbody, .fht-tbody{
+    .overLordTable{
+      position: relative;
+      border-collapse: collapse;
+      width: 100%;
+      .data-row{
+        text-align: left !important;
+        transition: color .5s;
+        cursor: pointer;
+        text-rendering: optimizeLegibility;
+        -webkit-font-smoothing: antialiased;
+        -moz-font-smoothing: antialiased;
+        :hover{color: #119986;}
+      }
+      .data-row:nth-child(odd) {background-color: #030303;}
+
+      thead{
+        .basic-th{
+          height: 40px !important;
+
+        }
+        .user-th{
+          display: -webkit-box;
+          height: 40px;
+        }
+      }
+      tbody{
+        position: initial;
+
+        tr:nth-child(odd){
+          background-color: #030303;
+          -webkit-box-shadow: rgb(7, 62, 47) 2px 25px 80px, inset rgba(0, 0, 0, 0.4) 0 0 0 13px;
+          box-shadow: rgb(7, 62, 47) 2px 25px 80px, inset rgba(0, 0, 0, 0.4) 0 0 0 13px;
+        }
+        tr:nth-child(even){
+          background-color: #0e0e0e;
+          -webkit-box-shadow: rgb(7, 62, 47) 2px 25px 80px, inset rgba(0, 0, 0, 0.4) 0 0 0 5px;
+          box-shadow: rgb(7, 62, 47) 2px 25px 80px, inset rgba(0, 0, 0, 0.4) 0 0 0 5px;
+        }
+
+
+      }
+      th, td {
+        position: relative;
+        text-align: center;
+        //padding: 15px;
+        a{
+          position: relative;
+          min-width: 150px;
+          padding-right: 5px;
+          padding-left: 5px;
+          float: left;
+        }
+        height: 40px !important;
+        border-bottom: none !important;
+        width: 178px;
+
+      }
+    }
+  }
+}
+.stuck-avatar{
+  padding: 0 !important;
+  position: relative;
+  .user-box{
+    cursor: pointer;
+    height: 100%;
+    position: relative;
+    padding: 15px 15px 15px 15px;
+    border-right: 1px solid #11998617;
+
+    .user-avatar{
+      width: 75px;
+      height: 75px;
+
+      background-color: black;
+      -webkit-box-shadow: rgba(0, 0, 0, 0.7) 0 1px 8px, inset rgba(0, 0, 0, 0.4) 0 0 0 1px;
+      -moz-box-shadow: rgba(0, 0, 0, 0.7) 0 1px 8px, inset rgba(0, 0, 0, 0.4) 0 0 0 1px;
+      box-shadow: rgba(0, 0, 0, 0.7) 0 1px 8px, inset rgba(0, 0, 0, 0.4) 0 0 0 1px;
+      border: .5px solid rgba(6, 130, 129, 0.28);
+    }
+    .user-id{
+      position: absolute;
+      top: 5px;
+      left: 5px;
+      color: #0a564c;
+      font-size: 20px;
+      font-weight: 800;
+    }
+
+    .user-name{
+      position: relative;
+      .user-discord-username{
+        color: white;
+        position: relative;
+        float: left;
+      }
+      .user-discord-discriminator{
+        font-size: 10px;
+        top: -5px;
+        position: relative;
+      }
+    }
+
+  }
+}
+.table-data-types{
+  color: #1199868f;
+  //background-color: #030303;
+  font-weight: bolder;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-font-smoothing: antialiased;
+  text-transform: uppercase;
+
+  //-webkit-box-shadow:inset 0 0 0 2px #0a564c;
+  //-moz-box-shadow:inset 0 0 0 2px #0a564c;
+  //box-shadow:inset 0 0 5px 2px #0a564c, rgba(0, 0, 0, 0.7) 0 1px 8px, inset rgba(0, 0, 0, 0.4) 0 0 0 1px;
+
+}

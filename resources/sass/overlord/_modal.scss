@@ -1,0 +1,230 @@
+.modal-back{
+  position: fixed;
+  top: 50px;
+  right: 0;
+  bottom: 0;
+  display: table;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  z-index: 1040;
+}
+.modal-panel{
+  width: 60%;
+  height: 100%;
+  margin: 0 auto;
+  background-color: rgba(0, 0, 0, 0.9);
+  display: table-cell;
+  vertical-align: middle;
+}
+.modalContent{
+  background-color: #2a2a2a;
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+  height:100%;
+  max-height: 830px;
+  .modal-body{
+    width: 100%;
+    height: 100%;
+    max-height: 740px;
+    overflow: auto;
+    .modal-description{
+      width: 410px;
+      height: 55px;
+      padding: 15px 0;
+      margin-top: 6px;
+      float: right;
+      background-color: black;
+      text-align: center;
+    }
+    .ticker-board{
+      width: 410px;
+      height: 80px;
+      margin-top: 6px;
+      float: right;
+      padding: 15px;
+      .ticker-left{  float: left;  }
+      .ticker-right{  float: right;  }
+      .ticker-right , .ticker-left{
+        .item-title{
+          color: #007c7b;
+        }
+      }
+    }
+    .modal-body-content{
+      width: 100%;
+      height:2000px;
+      background-color: #232323;
+      padding:15px;
+      .top-panel{
+        width: 100%;
+        height:300px;
+        z-index: 3000;
+        position:relative;
+        display:inline-block;
+      }
+      .beat-controls{
+        background-color: black;
+        width: 70px;
+        height: 100%;
+        margin-right: 15px;
+        float: left;
+        .options{
+          display: inline-block;
+          padding: 5px;
+          width: 100%;
+          text-align: -webkit-center;
+          a{
+            background-color: #232323;
+            padding: 1px 5px;
+            font-size: 15px;
+            line-height: 1.5;
+            margin-bottom:5px;
+          }
+          a.text-btn{
+            font-size: 8px;
+            width: 100%;
+            float: left;
+          }
+        }
+      }
+      .beat-cover{
+        height: 100%;
+        float: left;
+        .cover-img2{
+          height: 100%;
+          border: 1px dotted rgba(0, 230, 228, 0.54);
+        }
+      }
+    }
+  }
+
+}
+.modal-title{
+  width: 100%;
+  height: 50px;
+  background-color: black;
+  display: inline-flex;
+  .title-text{
+    padding: 5px 20px 5px 20px;
+    background-color: rgba(0, 230, 228, 0.54);
+    border-right: .5px dotted rgb(255, 255, 255);
+    .span-title-text{
+      color: black !important;
+      float: left;
+      width: 100%;
+      top: 10px;
+      position: relative;
+      height: 100%;
+      -webkit-text-stroke-width: 1px;
+      -webkit-text-stroke-color: rgba(255, 255, 255, 0.6);
+    }
+  }
+  .title-information{
+    padding: 5px;
+    .name{
+      float: left;
+      padding: 5px;
+      top: 5px;
+      position: relative;
+    }
+  }
+  .modal-exit{
+    display: inline-block;
+    margin: auto;
+    font-size: 20px;
+    margin-right: 15px;
+  }
+}
+.modal-title-small{
+  width: 100%;
+  height: 30px;
+  background-color: black;
+  display: inline-flex;
+  .title-text{
+    padding: 5px 10px 5px 10px;
+    background-color: rgba(0, 230, 228, 0.54);
+    border-right: .5px dotted rgb(255, 255, 255);
+    .span-title-text{
+      color: black !important;
+      float: left;
+      width: 100%;
+      top: -5px;
+      font-size: 40px !important;
+      position: relative;
+      height: 100%;
+      -webkit-text-stroke-width: 1px;
+      -webkit-text-stroke-color: rgba(255, 255, 255, 0.46);
+    }
+  }
+  .title-information{
+    padding: 5px;
+    .name{
+      float: left;
+      padding: 0 5px;
+      position: relative;
+    }
+  }
+}
+.modal-page{
+  width:100%;
+  position: relative;
+  display: inline-block;
+  padding: 10px;
+  .modal-page-container{
+    width:100%;
+
+  }
+}
+.modal-body-content-panel{
+  width: 100%;
+  padding: 0 40px 0 40px;
+  background-color: black;
+  .modal-body-content-inner{
+    background-color: #2a2a2a;
+    padding:25px;
+    width:100%;
+    min-height: 250px;
+    .modal-errors{
+      min-height: 100px;
+      height: 100%;
+      padding: 10px;
+      .error-panel{
+        width:100%;
+        height:100%;
+        background-color: black;
+        padding:5px;
+      }
+    }
+  }
+}
+.information-board{
+  width: 100%;
+  max-width: 500px;
+  height: 300px;
+  float: left;
+  padding: 0 30px;
+  .information-panel{
+    width: 100%;
+    height: 80px;
+    background-color: black;
+    padding: 15px;
+    display: inline-block;
+    .information-panel-row{
+      width: 100%;
+      text-align: -webkit-center;
+      float: left;
+      .information-panel-item{
+        display: inline-block;
+        width: 50%;
+        float: left;
+        .item-title{
+          color: #007c7b;
+        }
+      }
+    }
+
+  }
+
+}

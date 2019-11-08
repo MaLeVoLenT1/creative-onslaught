@@ -1,0 +1,400 @@
+@import "icons";
+
+.menuStateHover{
+  opacity: 1 !important;
+}
+.adjustEditorWidth{
+  width: 78% !important;
+}
+.adjustStatsWidth{
+  width: 5.33333333% !important;
+}
+.responsive-editor{
+  -webkit-transition: all .5s ease;
+  transition: all .5s ease;
+}
+.responsive-stats{
+  -webkit-transition: all .5s ease;
+  transition: all .5s ease;
+  padding: 0 !important;
+}
+.mini-stat{
+  float: left;
+}
+.mini-stat-number{
+  float: right;
+}
+.compact-stats{
+  padding: 20px !important;
+  .stat{
+    margin-bottom: 15px;
+  }
+  .title-stats{
+    margin-bottom: 20px;
+  }
+}
+.weapon-disable{
+  display: none;
+}
+.skill-holder{
+  height: 60px !important;
+  width: 60px !important;
+  background-color: #161616;
+  overflow: hidden;
+  -webkit-box-shadow: inset 0 0 30px black;
+  box-shadow: inset 0 0 30px black;
+  border: 1px solid black;
+}
+.skill-background{
+  background-color: #161616;
+  -webkit-box-shadow: inset 0 0 30px black;
+  box-shadow: inset 0 0 30px black;
+  border: 1px solid black;
+}
+
+
+.side-buttons{
+  margin-bottom: 10px;
+  .overlord-button{
+    width: 50px;
+    height: 50px;
+    float: left;
+    text-align: center;
+    position: relative;
+    cursor: pointer;
+    padding: 0 8px 0 0;
+    margin-right: 10px;
+    font-size: 10px;
+    color: #edf4ff;
+    img{
+      width: 100%;
+      opacity: .3;
+    }
+  }
+}
+.buildName-text{
+  line-height: normal !important;
+  margin: 5px 0 !important;
+  color: rgba(19, 145, 148, 0.82);
+}
+
+.profession-selector{
+  width: 100%;
+  border-top: solid 2px rgba(32, 70, 68, 0.81);
+  border-bottom: solid 2px rgba(32, 70, 68, 0.81);
+  min-height: 100px;
+  background-color: rgba(22, 22, 22, 0.96);
+  border-radius: 4px;
+  text-align: center;
+  .professions{
+    display: inline-block;
+    margin-bottom: 0;
+    padding: 0;
+    list-style-type: none;
+    li{
+      float: left;
+      margin-left: 15px;
+      padding-bottom: 15px;
+      .selector-icon{
+        font-size: 40px;
+        text-shadow: 0 0 10px black;
+        text-decoration: none;
+        -webkit-transition: all 0.5s;
+        -moz-transition: all 0.5s;
+        transition: all 0.5s;
+      }
+    }
+  }
+}
+.profession-options{
+  min-height: 96px;
+  padding-top: 15px;
+  ul{
+    margin: 0;
+    display: inline-block;
+    list-style-type: none;
+    width: 100%;
+    background-color: #0d0d0d;
+    font-weight: bolder;
+    margin-right: 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    border-left: solid 2px rgba(32, 70, 68, 0.53);
+    border-right: solid 2px rgba(32, 70, 68, 0.53);
+    li{
+      padding: 0;
+
+    }
+
+  }
+}
+
+.necromancerLite{border-right: 0.5px solid rgba(35, 124, 56, 0.48);}
+.elementalistLite{border-right: 0.5px solid rgba(196, 49, 29, 0.47);}
+.mesmerLite{border-right: 0.5px solid rgba(150, 41, 166, 0.5);}
+.thiefLite{border-right: 0.5px solid rgba(116, 64, 78, 0.58);}
+.engineerLite{border-right: 0.5px solid rgba(146, 84, 43, 0.46);}
+.rangerLite{border-right: 0.5px solid rgba(107, 169, 36, 0.52);}
+.warriorLite{border-right: 0.5px solid rgba(217, 135, 11, 0.49);}
+.guardianLite{border-right: 0.5px solid rgba(29, 166, 196, 0.43);}
+.revenantLite{border-right: 0.5px solid rgba(211, 81, 48, 0.5);}
+.normalLite{border-right: 0.5px solid darken(rgba(25, 222, 194, 0.54), 15%);}
+
+
+.scourgeBG {
+  background-image: url("../images/calculator/scourge.png");
+  background-repeat: no-repeat;
+  background-position: center top;
+  border: 1px solid #34b853;
+}
+.necromancerBG {
+  background-image: url("../images/calculator/necromancer.png");
+  background-repeat: no-repeat;
+  background-position: center top;
+  border: 1px solid #34b853;
+}
+.reaperBG {
+  background-image: url("../images/calculator/reaper.png");
+  background-repeat: no-repeat;
+  background-position: center top;
+  border: 1px solid #34b853;
+}
+.elementalistBG {
+  background-image: url("../images/calculator/elementalist.png");
+  background-repeat: no-repeat;
+  background-position: center top;
+  border: 1px solid #e45c4a;
+}
+.tempestBG {
+  background-image: url("../images/calculator/tempest.png");
+  background-repeat: no-repeat;
+  background-position: center top;
+  border: 1px solid #e45c4a;
+}
+.weaverBG {
+  background-image: url("../images/calculator/weaver.png");
+  background-repeat: no-repeat;
+  background-position: center top;
+  border: 1px solid #e45c4a;
+}
+.mesmerBG {
+  background-image: url("../images/calculator/mesmer.png");
+  background-repeat: no-repeat;
+  background-position: center top;
+  border: 1px solid #c149d2;
+}
+.chronomancerBG {
+  background-image: url("../images/calculator/chronomancer.png");
+  background-repeat: no-repeat;
+  background-position: center top;
+  border: 1px solid #c149d2;
+}
+.mirageBG {
+  background-image: url("../images/calculator/mirage.png");
+  background-repeat: no-repeat;
+  background-position: center top;
+  border: 1px solid #c149d2;
+}
+.thiefBG {
+  background-image: url("../images/calculator/thief.png");
+  background-repeat: no-repeat;
+  background-position: center top;
+  border: 1px solid #a55b70;
+}
+.daredevilBG {
+  background-image: url("../images/calculator/daredevil.png");
+  background-repeat: no-repeat;
+  background-position: center top;
+  border: 1px solid #a55b70;
+}
+.deadeyeBG {
+  background-image: url("../images/calculator/deadeye.png");
+  background-repeat: no-repeat;
+  background-position: center top;
+  border: 1px solid #a55b70;
+}
+.engineerBG {
+  background-image: url("../images/calculator/engineer.png");
+  background-repeat: no-repeat;
+  background-position: center top;
+  border: 1px solid #c77743;
+}
+.scrapperBG {
+  background-image: url("../images/calculator/scrapper.png");
+  background-repeat: no-repeat;
+  background-position: center top;
+  border: 1px solid #c77743;
+}
+.holosmithBG {
+  background-image: url("../images/calculator/holosmith.png");
+  background-repeat: no-repeat;
+  background-position: center top;
+  border: 1px solid #c77743;
+}
+.rangerBG {
+  background-image: url("../images/calculator/ranger.png");
+  background-repeat: no-repeat;
+  background-position: center top;
+  border: 1px solid #92d743;
+}
+.druidBG {
+  background-image: url("../images/calculator/druid.png");
+  background-repeat: no-repeat;
+  background-position: center top;
+  border: 1px solid #92d743;
+}
+.soulbeastBG {
+  background-image: url("../images/calculator/soulbeast.png");
+  background-repeat: no-repeat;
+  background-position: center top;
+  border: 1px solid #92d743;
+}
+.warriorBG {
+  background-image: url("../images/calculator/warrior.png");
+  background-repeat: no-repeat;
+  background-position: center top;
+  border: 1px solid #f5ab3c;
+}
+.berserkerBG {
+  background-image: url("../images/calculator/berserker.png");
+  background-repeat: no-repeat;
+  background-position: center top;
+  border: 1px solid #f5ab3c;
+}
+.spellbreakerBG {
+  background-image: url("../images/calculator/spellbreaker.png");
+  background-repeat: no-repeat;
+  background-position: center top;
+  border: 1px solid #f5ab3c;
+}
+.guardianBG {
+  background-image: url("../images/calculator/guardian.png");
+  background-repeat: no-repeat;
+  background-position: center top;
+  border: 1px solid #4ac8e4;
+}
+.dragonhunterBG {
+  background-image: url("../images/calculator/dragonhunter.png");
+  background-repeat: no-repeat;
+  background-position: center top;
+  border: 1px solid #4ac8e4;
+}
+.firebrandBG {
+  background-image: url("../images/calculator/firebrand.png");
+  background-repeat: no-repeat;
+  background-position: center top;
+  border: 1px solid #4ac8e4;
+}
+.revenantBG {
+  background-image: url("../images/calculator/revenant.png");
+  background-repeat: no-repeat;
+  background-position: center top;
+  border: 1px solid #963820;
+}
+.heraldBG {
+  background-image: url("../images/calculator/herald.png");
+  background-repeat: no-repeat;
+  background-position: center top;
+  border: 1px solid #963820;
+}
+.renegadeBG {
+  background-image: url("../images/calculator/renegade.png");
+  background-repeat: no-repeat;
+  background-position: center top;
+  border: 1px solid #963820;
+}
+.normalBG {
+  border: 1px solid rgba(25, 222, 194, 0.54);
+}
+
+.RevenantWepGlow:hover, .RenegadeWepGlow:hover, .HeraldWepGlow:hover{color: #0d0d0d; text-shadow: 0 0 4px #963820; cursor: pointer;}
+.RevenantWepGlow.active, .RenegadeWepGlow.active, .HeraldWepGlow.active{color: #963820 !important;}
+
+.GuardianWepGlow:hover, .FirebrandWepGlow:hover, .DragonhunterWepGlow:hover{color: #0d0d0d; text-shadow: 0 0 4px #4ac8e4; cursor: pointer;}
+.GuardianWepGlow.active, .FirebrandWepGlow.active, .DragonhunterWepGlow.active{color: #4ac8e4 !important;}
+
+.WarriorWepGlow:hover, .BerserkerWepGlow:hover, .SpellbreakerWepGlow:hover{color: #0d0d0d; text-shadow: 0 0 4px #f5ab3c; cursor: pointer;}
+.WarriorWepGlow.active, .BerserkerWepGlow.active, .SpellbreakerWepGlow.active{color: #f5ab3c !important;}
+
+.RangerWepGlow:hover, .DruidWepGlow:hover, .SoulbeastWepGlow:hover{color: #0d0d0d; text-shadow: 0 0 4px #92d743; cursor: pointer;}
+.RangerWepGlow.active, .DruidWepGlow.active, .SoulbeastWepGlow.active{color: #92d743 !important;}
+
+.EngineerWepGlow:hover, .ScrapperWepGlow:hover, .HolosmithWepGlow:hover{color: #0d0d0d; text-shadow: 0 0 4px #c77743; cursor: pointer;}
+.EngineerWepGlow.active, .ScrapperWepGlow.active, .HolosmithWepGlow.active{color: #c77743 !important;}
+
+.ThiefWepGlow:hover, .DaredevilWepGlow:hover, .DeadeyeWepGlow:hover{color: #0d0d0d; text-shadow: 0 0 4px #a55b70; cursor: pointer;}
+.ThiefWepGlow.active, .DaredevilWepGlow.active, .DeadeyeWepGlow.active{color: #a55b70 !important;}
+
+.MesmerWepGlow:hover, .MirageWepGlow:hover, .ChronomancerWepGlow:hover{color: #0d0d0d; text-shadow: 0 0 4px #c149d2; cursor: pointer;}
+.MesmerWepGlow.active, .MirageWepGlow.active, .ChronomancerWepGlow.active{color: #c149d2 !important;}
+
+.ElementalistWepGlow:hover, .WeaverWepGlow:hover, .TempestWepGlow:hover{color: #0d0d0d; text-shadow: 0 0 4px #e45c4a; cursor: pointer;}
+.ElementalistWepGlow.active, .WeaverWepGlow.active, .TempestWepGlow.active{color: #e45c4a !important;}
+
+.NecromancerWepGlow:hover, .ReaperWepGlow:hover, .ScourgeWepGlow:hover{color: #0d0d0d; text-shadow: 0 0 4px #34b853; cursor: pointer;}
+.NecromancerWepGlow.active, .ReaperWepGlow.active, .ScourgeWepGlow.active{color: #34b853 !important;}
+
+//tooltips
+.overlord-tooltip{
+  width: 300px;
+  background:rgba(22, 22, 22, 0.96);
+  border-radius:3px;
+  padding: 5px 10px !important;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.7) 0 1px 8px, inset rgba(0, 0, 0, 0.4) 0 0 0 1px;
+  box-shadow: rgba(0, 0, 0, 0.7) 0 1px 8px, inset rgba(0, 0, 0, 0.4) 0 0 0 1px;
+  .tooltip-item-name{
+    font-weight: bold;
+    padding-left: 5px;
+    padding-top: 15px;
+  }
+  .tooltip-activation-time{
+    font-size: 10px;
+    padding-top: 15px;
+    padding-left:10px;
+    .activation-image{
+      width: 15px;
+      height: 15px;
+    }
+  }
+  .tooltip-description{
+    font-style: italic;
+    margin-bottom: 10px;
+    font-size: 12px;
+    color: rgba(255,255,255,0.4);
+  }
+  .tooltip-facts{
+    padding: 0 5px !important;
+    font-size: 12px;
+    .tooltip-fact-icon{
+      width: 20px;
+      height: 20px;
+    }
+    .multiplier{
+      font-size: 10px;
+      position: relative;
+      color: rgba(255, 255, 255, 0.4);
+      bottom: 5px;
+    }
+  }
+
+}
+
+.necromancerTooltip {border-left: 1px solid #34b853; border-right: 1px solid #34b853; .tooltip-item-name{color: #34b853;}}
+.elementalistTooltip {border-left: 1px solid #e45c4a; border-right: 1px solid #e45c4a; .tooltip-item-name{color: #e45c4a;}}
+.mesmerTooltip {border-left: 1px solid #c149d2; border-right: 1px solid #c149d2; .tooltip-item-name{color: #c149d2;}}
+.thiefTooltip {border-left: 1px solid #a55b70; border-right: 1px solid #a55b70; .tooltip-item-name{color: #a55b70;}}
+.engineerTooltip {border-left: 1px solid #c77743; border-right: 1px solid #c77743; .tooltip-item-name{color: #c77743;}}
+.rangerTooltip {border-left: 1px solid #92d743; border-right: 1px solid #92d743; .tooltip-item-name{color: #92d743;}}
+.warriorTooltip {border-left: 1px solid #f5ab3c; border-right: 1px solid #f5ab3c; .tooltip-item-name{color: #f5ab3c;}}
+.guardianTooltip {border-left: 1px solid #4ac8e4; border-right: 1px solid #4ac8e4; .tooltip-item-name{color: #4ac8e4;}}
+.revenantTooltip {border-left: 1px solid #963820; border-right: 1px solid #963820; .tooltip-item-name{color: #963820;}}
+
+.RevenantSkillGlow:hover{border: 1px solid #963820; cursor: pointer;}
+.GuardianSkillGlow:hover{border: 1px solid #4ac8e4; cursor: pointer;}
+.WarriorSkillGlow:hover{border: 1px solid #f5ab3c; cursor: pointer;}
+.RangerSkillGlow:hover{border: 1px solid #92d743; cursor: pointer;}
+.EngineerSkillGlow:hover{border: 1px solid #c77743; cursor: pointer;}
+.ThiefSkillGlow:hover{border: 1px solid #a55b70; cursor: pointer;}
+.MesmerSkillGlow:hover{border: 1px solid #c149d2; cursor: pointer;}
+.ElementalistSkillGlow:hover{border: 1px solid #e45c4a; cursor: pointer;}
+.NecromancerSkillGlow:hover{border: 1px solid #34b853; cursor: pointer;}

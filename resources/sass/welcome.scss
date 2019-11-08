@@ -1,0 +1,55 @@
+html, body {
+  background-color: #2f2f2f;
+  color: #636b6f;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 100;
+  height: 100vh;
+  overflow: hidden;
+}
+
+#app {
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+.links{
+  position: absolute;
+  right: -70px;
+  display: inherit;
+  margin-top: 50px;
+}
+
+.links > a {
+  color: rgba(129, 132, 134, 0.82);
+  padding: 0 26px;
+  font-size: 20px;
+  letter-spacing: .1rem;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+#logo{
+  position: relative;
+  width: 50%;
+  align-items: center;
+  display: flex;
+}
+
+#logo-tribal{
+  max-width: 509px;
+  min-width: 201px;
+  width: 100%;
+  position: absolute;
+  opacity: .8;
+}
+
+#logo-text{
+  max-width: 875px;
+  min-width: 201px;
+  width: 100%;
+  position: absolute;
+  opacity: .8;
+}
