@@ -17,13 +17,13 @@ class HeaderSeeder extends Seeder
         // Header Information
         $information = new HeaderInformation();
         $information -> author = 'DioneMR';
-        $information -> description ='Creative Onslaught is website geared to the creation of digital art, stories and video games of all kinds.';
+        $information -> description ='Gow-Mac In-house Customer Application Database.';
         $information -> is_active = true;
         $information -> pages = 'all';
         $information -> save();
 
         // Keywords Data
-        $keywords = ["creativity", "digital arts", "story telling", "video games", "creative onslaught"];
+        $keywords = ["gow-mac", "applications", "in-house", "database"];
         foreach($keywords as $keyword){
             $keyword_data = new HeaderKeywords();
             $keyword_data -> name = $keyword;

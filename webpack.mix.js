@@ -40,3 +40,5 @@ mix.sass('resources/sass/admin.scss', 'public/css') .options({
     processCssUrls: false
 });
 mix.sass('resources/sass/app.scss', 'public/css');
+
+mix.copyDirectory('resources/img/', 'public/images');

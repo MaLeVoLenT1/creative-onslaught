@@ -8,7 +8,7 @@
         <meta name="author" content="{{$header['author']}}">
         <meta name="csrf-token" content="{{ csrf_token() }}">
 
-        <title>Creative-Onslaught</title>
+        <title>Gow-Mac DB</title>
         <link rel="icon" type="image/png" href="{{ asset($header['icon']) }}">
 
         <link href="{{url( '/css/app.css' )}}" rel="stylesheet">

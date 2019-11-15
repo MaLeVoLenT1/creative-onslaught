@@ -13,22 +13,23 @@ window.vDashboard = new Vue({
                 window:{scrollDistance:0},
                 sideNav:{top:0, left:0},
                 pageNav:{},
-                interfaces:{
-                    home:{},
-                    news:{
-                        home:{style:"normal", background:"transparent", hasMenu: true, topBar: true, bottomBar: true},
-                        create:{style:"full", background:"matt", hasMenu: true, topBar: false, bottomBar: false},
-                        target:{style:"full", background:"matt", hasMenu: true, topBar: false, bottomBar: false}
-                    },
-                    about:{
-                        home:{style:"full", background:"matt", hasMenu: true, topBar: false, bottomBar: false},
-                    },
-                },
-                links:[
-                    {name:"home", abbreviation:"Home", sorting:"second", text:"Home", href:'home', active:false,}
-                ]
+
             },
             userConfig:{isSignedIn: false, rank: ''},
+            interfaces:{
+                home:{},
+                news:{
+                    home:{style:"normal", background:"transparent", hasMenu: true, topBar: true, bottomBar: true},
+                    create:{style:"full", background:"matt", hasMenu: true, topBar: false, bottomBar: false},
+                    target:{style:"full", background:"matt", hasMenu: true, topBar: false, bottomBar: false}
+                },
+                about:{
+                    home:{style:"full", background:"matt", hasMenu: true, topBar: false, bottomBar: false},
+                },
+            },
+            links:[
+                {name:"home", abbreviation:"Home", sorting:"second", text:"Home", href:'home', active:false,}
+            ]
         }
 
     },
@@ -153,11 +154,11 @@ window.vDashboard = new Vue({
                 }
             });
             if(self.location.sub !== null){
-                $(document).prop('title', 'CO | ' + self.upperCaseFirstCharacter(self.location.main) + ' | ' + self.upperCaseFirstCharacter(self.location.sub));
+                $(document).prop('title', 'DB | ' + self.upperCaseFirstCharacter(self.location.main) + ' | ' + self.upperCaseFirstCharacter(self.location.sub));
             }
             else{
-                if(self.location.target === null) $(document).prop('title', 'CO | ' + self.upperCaseFirstCharacter(self.location.main));
-                else $(document).prop('title', `CO | ${self.upperCaseFirstCharacter(self.location.main)} | ${self.upperCaseFirstCharacter(self.location.target)}`);
+                if(self.location.target === null) $(document).prop('title', 'DB | ' + self.upperCaseFirstCharacter(self.location.main));
+                else $(document).prop('title', `DB | ${self.upperCaseFirstCharacter(self.location.main)} | ${self.upperCaseFirstCharacter(self.location.target)}`);
             }
         },
 

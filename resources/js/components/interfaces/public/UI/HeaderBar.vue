@@ -10,15 +10,12 @@
                 <nav class="menuzord js-primary-navigation" role="navigation" aria-label="Primary Navigation">
 
                     <a v-if="this.headerStyle === 'floating' && this.showIcon === true" :href="location.host + 'home'" class="logo-brand">
-                        <img class="retina" :src="location.host + 'images/logos/Overlord_O.png'" alt="Creative-Onslaught">
-                        Creative-Onslaught
+                        <img class="retina" :src="location.host + 'images/logos/gow-mac/fanzy-gm-logo.png'" alt="Gow-Mac">
                     </a>
 
                     <a v-if="this.headerStyle !== 'floating'" :href="location.host + 'home'" class="logo-brand">
-                        <img class="retina" :src="location.host + 'images/logos/Overlord_O.png'" alt="Creative-Onslaught">
-                        Creative-Onslaught
+                        <img class="retina" :src="location.host + 'images/logos/gow-mac/fanzy-gm-logo.png'" alt="Gow-Mac">
                     </a>
-
                     <header-options/>
 
                 </nav>
