@@ -11,14 +11,14 @@
         <!-- Login & Register -->
         <transition name="fade"> <login v-if="location.main === 'login'"/> </transition>
 
-        <!-- About -->
-        <transition name="fade"> <about v-if="location.main === 'about'"/> </transition>
+        <!-- About
+        <transition name="fade"> <about v-if="location.main === 'about'"/> </transition>-->
 
-        <!-- News -->
-        <transition name="fade"> <news v-if="location.main === 'news'"/> </transition>
+        <!-- News
+        <transition name="fade"> <news v-if="location.main === 'news'"/> </transition> -->
 
-        <!-- Authenticated User Profile -->
-        <transition name="fade"> <profile v-if="location.main === 'profile'"/> </transition>
+        <!-- Authenticated User Profile
+        <transition name="fade"> <profile v-if="location.main === 'profile'"/> </transition> -->
 
     </div>
 </template>
