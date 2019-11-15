@@ -20,8 +20,8 @@
         <li style="padding: 0;" class="nav-divider" aria-hidden="true"><a href="javascript:void(0)">|</a></li>
 
         <!-- Login Information Option -->
-        <li style="padding: 0;" v-if="user.data === null"><a :href="location.host + 'login'"> Login</a></li>
-        <li style="padding: 0;" v-if="user.data !== null" class="cart-info">
+        <li style="padding: 0;" v-if="user === null"><a :href="location.host + 'login'"> Login</a></li>
+        <li style="padding: 0;" v-if="user !== null" class="cart-info">
             <a href="javascript:void(0)" style="text-transform: none;">
                 <i class="fa fa-user-o"></i>
                 <span v-if="user.data.display_name !== null">{{user.data.display_name}}</span>

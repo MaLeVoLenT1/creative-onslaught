@@ -41,7 +41,7 @@ window.vDashboard = new Vue({
             self.requests.item = request;
         });
 
-        if(this.user.data){
+        if(this.user){
             // Officially Signs in User to Client Interface
             console.log(`You're logged in as ${this.user.data.username}.Configuring user.`);
             this.userConfig.isSignedIn = true;

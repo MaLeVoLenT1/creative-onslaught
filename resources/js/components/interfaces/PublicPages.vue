@@ -1,5 +1,7 @@
 <template>
     <div>
+        <!-- Header Bar -->
+        <header-bar v-if="location.main !== ''" :header-style="headerStyle" :header-color="'dark'"/>
         <!-- Landing -->
         <transition name="fade"> <landing v-if="location.main === ''"/> </transition>
 
@@ -28,9 +30,10 @@
     import About from "./public/pages/About";
     import News from "./public/pages/News";
     import Profile from "./public/pages/Profile";
+    import HeaderBar from "./public/UI/HeaderBar";
     export default {
         name: "PublicPages",
-        components: {Profile, News, About, Login, Landing, Home},
+        components: {HeaderBar, Profile, News, About, Login, Landing, Home},
         data(){
             return {
                 location: window.vDashboard.location, user: window.vDashboard.user,
